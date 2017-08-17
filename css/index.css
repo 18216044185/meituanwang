@@ -1,0 +1,2218 @@
+@charset "utf-8";
+
+<---------------------famous(名店)开始--->  
+.famous{		/*famous(名店)总体样式*/
+	height:313px;	
+}
+
+.famous .itemlist {  /*整体的用来包含ul块的那个div*/
+	position: relative;
+	height:264px;
+}
+.famous ul{
+	position: absolute;
+	width: 4680px; /*(3+1)*1170;*/
+	height:264px;
+}
+.famous li{
+	overflow: hidden;
+	display:inline-block;
+	float:left;
+}
+.famoustitle{	/*famous(名店)标题栏样式*/
+	height:40px;
+	width:415px;	
+}
+.famoustitle p{/*famous(名店)标题栏“名店抢购”样式*/
+	height:40px;
+	line-height:40px;
+}
+.famoustitle a:hover{/*famous(名店)标题栏“名店抢购”鼠标覆盖样式*/
+	color:#333;
+}
+.famous-time{	/*famous(名店)标题栏‘时间模块’样式*/
+	height:40px;
+	width:262px;
+	border:1px solid #eeeeee;
+	border-radius:5px;
+	margin-left:5px;
+	display:inline-block;
+	position:relative;
+}
+.icon-triout{	/*famous(名店)标题栏‘时间模块’边上三角形样式*/
+	border:6px solid transparent;
+	border-right-color:#ddd;
+	position:absolute;
+	top:7px;
+	left:-12px;
+}
+.icon-triin{	/*famous(名店)标题栏‘时间模块’边上三角形样式*/
+	border:6px solid transparent;
+	border-right-color:#fff;
+	position:absolute;
+	top:-6px;
+	left:-5px;
+}
+.famoustitle .time-bg-title{/*famous(名店)标题栏‘时间模块’黄色背景样式*/
+	width:53px;
+	height:28px;
+	background:#f76120;
+	font-weight:bold;
+	font-size:10px;
+	color:#FFF;
+	float:left;
+	margin-left:5px;
+	border-radius:5px;
+	display:inline-block;
+	line-height:28px;
+	margin-top:6px;
+}
+.famoustitle .time-bg{/*famous(名店)标题栏‘时间模块’灰
+	3色+84/7背景样式*/
+	width:20px;
+	height:28px;
+	background:url("../images/time-bg.png") no-repeat;
+	display:inline-block;
+	text-align:center;
+	line-height:28px;
+	color:#FFF;
+	font-size:20px;
+	margin-top:6px;
+}
+.itemlist{			/*famous(名店)box样式*/
+	height:264px;
+	width:1170px;
+	border:1px solid #eeeeee;
+	margin-top:5px;
+	margin-bottom:35px;
+}
+.item1{	/*famous(名店)box里面第一个样式*/
+	height:264px;
+	width:233px;
+	border-right:1px solid #eeeeee;
+	position:relative;
+	float:left;
+}
+.item1 img{/*famous(名店)box里面第一个图片样式*/
+	width:213px;
+	height:134px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.item1-imgbox{			/*box1的图片样式*/
+	width:213px;
+	height:134px;
+	display:inline-block;
+	
+}
+ .item1 .item1-icon-item1{		/*foodbox1图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:7px;
+}
+.item1 .item1-icon-item2{		/*foodbox1图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:46px;
+}
+.famousmenu {	/*famous(名店)box里面菜单栏样式*/
+	width:210px;
+	height:57px;
+	border-bottom:1px dashed #CCC;
+	margin-top:20px;
+	margin-left:14px;
+}
+.famousmenu span{/*famous(名店)box里面价格栏样式*/
+	margin-top:10px;
+	width:210px;
+	height:30px;
+	display:inline-block;
+}
+.famousmenu a{/*famous(名店)box里面超链接样式*/
+	display:inline-block;
+}
+.famousmenu a:hover{/*famous(名店)box里面超链接鼠标覆盖样式*/
+	color:#333;
+	text-decoration:none;
+}
+.famousmenu i{/*famous(名店)box里面“已售数量”样式*/
+	font-style:normal;
+	color:#999;
+	font-size:12px;
+}
+.item1 b{/*famous(名店)item1里面“手机购买立减”样式*/
+	width:110px;
+	height:17px;
+	background:#f76120;
+	color:#FFF;
+	font-weight:100;
+	line-height:17px;
+	margin-left:15px;
+	margin-top:14px;
+	text-align:center;
+}
+
+
+.item2{	/*famous(名店)item2里面第一个样式*/
+	height:264px;
+	width:233px;
+	border-right:1px solid #eeeeee;
+	position:relative;
+	float:left;
+}
+.item2 img{/*famous(名店)item2里面第一个图片样式*/
+	width:213px;
+	height:134px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.item2 .item2-icon-item1{		/*foodbox2图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:7px;
+}
+.item2 .item2-icon-item2{		/*foodbox2图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:46px;
+}
+.item2 b{/*famous(名店)item2里面“手机购买立减”样式*/
+	width:110px;
+	height:17px;
+	background:#f76120;
+	color:#FFF;
+	font-weight:100;
+	line-height:17px;
+	margin-left:15px;
+	margin-top:14px;
+	text-align:center;
+}
+
+
+.item3{	/*famous(名店)item3里面第一个样式*/
+	height:264px;
+	width:233px;
+	border-right:1px solid #eeeeee;
+	position:relative;
+	float:left;
+}
+.item3 img{/*famous(名店)item3里面第一个图片样式*/
+	width:213px;
+	height:134px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.item3 .item3-icon-item1{		/*foodbox3图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:7px;
+}
+.item3 .item3-icon-item2{		/*foodbox3图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:46px;
+}
+.item3 b{/*famous(名店)item3里面“手机购买立减”样式*/
+	width:110px;
+	height:17px;
+	background:#f76120;
+	color:#FFF;
+	font-weight:100;
+	line-height:17px;
+	margin-left:15px;
+	margin-top:14px;
+	text-align:center;
+}
+
+
+
+.item4{	/*famous(名店)item4里面第一个样式*/
+	height:264px;
+	width:233px;
+	border-right:1px solid #eeeeee;
+	position:relative;
+	float:left;
+}
+.item4 img{/*famous(名店)item4里面第一个图片样式*/
+	width:213px;
+	height:134px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.item4 .item4-icon-item1{		/*foodbox4图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:7px;
+}
+.item4 .item4-icon-item2{		/*foodbox4图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:46px;
+}
+.item4 b{/*famous(名店)item4里面“手机购买立减”样式*/
+	width:110px;
+	height:17px;
+	background:#f76120;
+	color:#FFF;
+	font-weight:100;
+	line-height:17px;
+	margin-left:15px;
+	margin-top:14px;
+	text-align:center;
+}
+
+.item5{	/*famous(名店)item5里面第一个样式*/
+	height:264px;
+	width:233px;
+	border-right:1px solid #eeeeee;
+	position:relative;
+	float:left;
+}
+.item5 img{/*famous(名店)box里面第一个图片样式*/
+	width:213px;
+	height:134px;
+	margin-top:6px;
+	margin-left:8px;
+}
+.item5 .item5-icon-item1{		/*foodbox5图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:7px;
+}
+.item5 .item5-icon-item2{		/*foodbox5图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:4px;
+	left:46px;
+}
+.item5 b{/*famous(名店)item5里面“手机购买立减”样式*/
+	width:110px;
+	height:17px;
+	background:#f76120;
+	color:#FFF;
+	font-weight:100;
+	line-height:17px;
+	margin-left:15px;
+	margin-top:14px;
+	text-align:center;
+}
+
+ <!------------------------------------------------------famous(名店)结束---> 
+
+
+
+ <!------------------------------------------------------food  开始---> 
+ .food{					/*food整体样式*/
+	 display:inline-block;
+ }
+ .foodtitle{			/*food上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.foodtitle span{		/*food上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.foodtitle a:hover{		/*food上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.foodul a:hover{		/*food上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .foodul li{			/*food上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.foodul li.cur{			/*food上方导航栏右边单个文字“全部”独特样式*/
+	border-right:none;
+	color:#6F6682;
+
+}
+.foodbox {				/*food下方整体样式*/
+	 height:1610px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.foodbox1{			/*foodbox1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox{			/*box1的图片样式*/
+	width:260px;
+	height:154px;
+	display:inline-block;
+	padding:12px 16px 0px 15px;
+	position:relative;
+}
+ .imgbox .icon-item1{		/*项目中所有的单个box里图片上小图片样式*/
+	background:url("../images/base.png") 0 -492px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.imgbox .icon-item2{		/*项目中所有的单个box里图片上小图片样式*/
+	background:url("../images/base.png") 0 -450px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:53px;
+
+}
+.food a:hover{			/*food中所有超链接鼠标覆盖上去无下划线*/
+	text-decoration:none;
+}
+.item-info{				/*项目中所有的单个box里item-info样式*/
+	height:42px;
+	display:inline-block;
+	margin-top:16px;
+	margin-left:8px;
+}
+.item-info h3{			/*项目中所有的单个box里item-info里h3的样式*/
+	font-weight:bold;
+	color:#666666;
+}
+.item-info p{			/*项目中所有的单个box里item-info里p的样式*/
+	color:#999999;
+	font-size:14px;
+	margin-top:8px;
+	margin-left:7px;
+}
+.item-info p:hover{		/*项目中所有的单个box里item-info里p鼠标覆盖上的样式*/
+	color:#333333;
+}
+.item-extra{		/*项目中所有的单个box里item-extra里的样式*/
+	height:20px;
+	width:260px;
+	display:inline-block;
+	border-bottom: 1px dotted #ddd;
+	margin-left:15px;
+	margin-top:15px;
+	padding-bottom:10px;
+}
+.item-sale{		/*项目中所有的单个box里item-sale里的样式*/
+	height:12px;
+	line-height:12px;
+	margin-left:15px;
+	margin-right:16px;
+	margin-top:11px;
+	display:inline-block;
+	color:#999;
+}
+.star-out1{		/*foodbox1中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in1{		/*foodbox1中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+
+.foodbox2{		/*foodbox2的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.star-out2{		/*foodbox2中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in2{		/*foodbox2中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox3{		/*foodbox3的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.star-out3{		/*foodbox3中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in3{		/*foodbox3中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox4{		/*foodbox4的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+ .imgbox .foodbox4-icon-item1{		/*foodbox4图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out4{		/*foodbox4中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in4{		/*foodbox4中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:49px;
+	height:12px;
+	display:inline-block;
+}
+
+.foodbox5{		/*foodbox5的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+
+.star-out5{		/*foodbox5中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in5{		/*foodbox5中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox6{		/*foodbox6的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox6-icon-item1{	/*foodbox6图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out6{			/*foodbox6中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in6{			/*foodbox6中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox7{		/*foodbox7的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox7-icon-item1{		/*foodbox7图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out7{		/*foodbox7中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in7{		/*foodbox7中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox8{		/*foodbox8的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox8-icon-item1{		/*foodbox8图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out8{		/*foodbox8中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in8{		/*foodbox8中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox9{		/*foodbox9的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox9-icon-item1{		/*foodbox9图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out9{		/*foodbox9中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in9{		/*foodbox9中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox10{		/*foodbox10的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox10-icon-item1{		/*foodbox10图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out10{		/*foodbox10中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in10{		/*foodbox10中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox11{		/*foodbox11的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox11-icon-item1{		/*foodbox11图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out11{		/*foodbox11中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in11{		/*foodbox11中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox12{		/*foodbox12的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.star-out12{		/*foodbox12中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in12{		/*foodbox12中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox13{		/*foodbox13的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox13-icon-item1{		/*foodbox13图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out13{		/*foodbox13中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in13{		/*foodbox13中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox14{		/*foodbox14的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.star-out14{		/*foodbox14中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in14{		/*foodbox14中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox15{		/*foodbox15的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox15-icon-item1{		/*foodbox15图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out15{		/*foodbox15中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in15{		/*foodbox15中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox16{		/*foodbox16的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.star-out16{		/*foodbox16中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in16{		/*foodbox16中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox17{		/*foodbox17的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox17-icon-item1{		/*foodbox17图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out17{		/*foodbox17中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in17{		/*foodbox17中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox18{		/*foodbox18的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox18-icon-item1{		/*foodbox18图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out18{		/*foodbox18中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in18{		/*foodbox18中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox19{		/*foodbox19的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox19-icon-item1{		/*foodbox19图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out19{		/*foodbox19中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in19{		/*foodbox19中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.foodbox20{		/*foodbox20的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .foodbox20-icon-item1{		/*foodbox20图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.star-out20{		/*foodbox20中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.star-in20{		/*foodbox20中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+
+.foodmore{		/*foodmore样式*/
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.foodmore a:hover{	/*foodmore里的鼠标覆盖上去无下划线样式*/
+	text-decoration:none;
+}
+ <!------------------------------------------------------food  结束--->  
+  
+
+
+
+
+
+
+
+  <!------------------------------------------------------amusement 开始---> 
+ .amusement{					/*amusement整体样式*/
+	 display:inline-block;
+ }
+ .amusementtitle{			/*amusement上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.amusementtitle span{		/*amusement上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.amusementtitle a:hover{		/*amusement上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.amusementul a:hover{		/*amusement上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .amusementul li{			/*amusement上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.amusementul li.cur{		/*amusement上方导航栏右边单个文字“全部”独特样式*/
+	border-right:none;
+	color:#6F6682;
+
+}
+.amusementbox {				/*amusement下方整体样式*/
+	 height:986px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.amusementbox1{			/*amusementbox1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .amusementbox1-icon-item1{		/*amusementbox1图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.amusement a:hover{		/*amusement里所有的a鼠标覆盖上无下划线效果*/
+	text-decoration:none;
+}
+.amusement-star-out1{		/*amusementbox1中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in1{		/*amusementbox1中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.amusementbox2{		/*amusementbox2的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .amusementbox2-icon-item1{		/*amusementbox2图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.amusement-star-out2{	/*amusementbox2中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in2{	/*amusementbox2中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox3{		/*amusementbox3的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .amusementbox3-icon-item1{		/*amusementbox3图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.amusement-star-out3{		/*amusementbox3中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in3{		/*amusementbox3中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox4{		/*amusementbox4的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out4{		/*amusementbox4中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in4{		/*amusementbox4中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+
+.amusementbox5{		/*amusementbox5的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out5{		/*amusementbox5中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in5{		/*amusementbox5中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox6{		/*amusementbox6的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .amusementbox6-icon-item1{		/*amusementbox6图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.amusement-star-out6{		/*amusementbox6中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in6{		/*amusementbox6中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox7{		/*amusementbox7的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out7{		/*amusementbox7中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in7{		/*amusementbox7中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox8{		/*amusementbox8的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out8{		/*amusementbox8中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in8{		/*amusementbox8中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox9{		/*amusementbox9的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out9{		/*amusementbox9中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in9{		/*amusementbox9中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox10{		/*amusementbox10的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out10{		/*amusement10中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in10{		/*amusement10中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox11{		/*amusementbox11的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.amusement-star-out11{		/*amusementbox11中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in11{		/*amusementbox11中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.amusementbox12{		/*amusementbox12的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .amusementbox12-icon-item1{		/*amusementbox12图片上特殊小图片样式*/
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.amusement-star-out12{		/*amusementbox12中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.amusement-star-in12{		/*amusementbox12中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+
+
+.amusementmore{			/*amusementmore样式*/	
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.amusementmore a:hover{			/*amusementmore里的鼠标覆盖上去无下划线样式*/
+	text-decoration:none;
+}
+ <!------------------------------------------------------amusement 结束--->  
+
+
+
+
+
+
+ <!------------------------------------------------------amusement 开始---> 
+ .movie{					/*amusement整体样式*/
+	 display:inline-block;
+ }
+ .movietitle{			/*amusement上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.movietitle span{		/*amusement上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.movietitle a:hover{		/*amusement上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.movieul a:hover{		/*amusement上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .movieul li{			/*amusement上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.movieul li.cur{		/*movie上方导航栏右边单个文字“全部”独特样式*/
+	border-right:none;
+	border-right:none;
+	color:#6F6682;
+
+}
+.moviebox {				/*amusement下方整体样式*/
+	 height:362px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.moviebox1{			/*moviebox1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.movie a:hover{		/*movie里所有的a鼠标覆盖上无下划线效果*/
+	text-decoration:none;
+}
+.movie-star-out1{		/*moviebox1中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.movie-star-in1{		/*moviebox1中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.moviemore{			/*moviemore样式*/
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.moviemore a:hover{			/*moviemore里的鼠标覆盖上去无下划线样式*/
+	text-decoration:none;
+}
+ <!------------------------------------------------------movie 结束--->  
+  
+  
+
+
+
+
+
+
+
+
+  <!------------------------------------------------------hotel 开始---> 
+ .hotel{					/*amusement整体样式*/
+	 display:inline-block;
+ }
+ .hoteltitle{			/*amusement上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.hoteltitle span{		/*amusement上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.hoteltitle a:hover{		/*amusement上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.hotelul a:hover{		/*amusement上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .hotelul li{			/*amusement上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.hotelul li.cur{		/*hotel上方导航栏右边单个文字“全部”独特样式*/
+	border-right:none;
+	color:#6F6682;
+
+}
+.hotelbox {				/*hotelbox下方整体样式*/
+	 height:674px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.hotelbox1{			/*hotelbox1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel a:hover{		/*hotel里所有的a鼠标覆盖上无下划线效果*/
+	text-decoration:none;
+}
+.hotel-star-out1{		/*hotelbox1中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in1{		/*hotelbox1中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.hotelbox2{		/*hotelbox2的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out2{		/*hotelbox2中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in2{		/*hotelbox2中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+.hotelbox3{		/*hotelbox3的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out3{		/*hotelbox3中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in3{		/*hotelbox3中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:42px;
+	height:12px;
+	display:inline-block;
+}
+.hotelbox4{		/*hotelbox4的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out4{		/*hotelbox4中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in4{		/*hotelbox4中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+
+.hotelbox5{		/*hotelbox5的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out5{		/*hotelbox5中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in5{		/*hotelbox5中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.hotelbox6{		/*hotelbox6的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out6{		/*hotelbox6中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in6{		/*hotelbox6中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.hotelbox7{		/*hotelbox7的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotelbox8{		/*hotelbox8的整体样式*/
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.hotel-star-out8{		/*hotelbox8中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.hotel-star-in8{		/*hotelbox8中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.hotelmore{		/*hotelmore样式*/
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.hotelmore a:hover{		/*hotelmore里的鼠标覆盖上去无下划线样式*/
+	text-decoration:none;
+}
+ <!------------------------------------------------------hotel 结束--->  
+
+
+
+
+
+
+  <!------------------------------------------------------life 开始---> 
+ .life{					/*.life整体样式*/
+	 display:inline-block;
+ }
+ .lifetitle{			/*.life上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.lifetitle span{		/*.life上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.lifetitle a:hover{		/*.life上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.lifeul a:hover{		/*.life上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .lifeul li{			/*.life上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.lifeul li.cur{
+	border-right:none;
+	color:#6F6682;
+
+}
+.lifebox {				/*.life下方整体样式*/
+	 height:674px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.lifebox1{			/*lifebox1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.life a:hover{
+	text-decoration:none;
+}
+.life-star-out1{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in1{
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+}
+
+.lifebox2{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.life-star-out2{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in2{
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+}
+.lifebox3{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.life-star-out3{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in3{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+.lifebox4{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .lifebox4-icon-item2{
+	background:url("../images/base.png") 0 -618px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:53px;
+
+}
+.lifebox5{			/*box1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+
+.life-star-out5{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in5{
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+}
+.lifebox6{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.life-star-out6{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in6{
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.lifebox7{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.life-star-out7{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in7{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+.lifebox8{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.life-star-out8{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.life-star-in8{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.lifemore{
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.lifemore a:hover{
+	text-decoration:none;
+}
+ <!------------------------------------------------------life 结束--->  
+
+
+
+
+
+
+
+  <!------------------------------------------------------beauty 开始---> 
+ .beauty{					/*amusement整体样式*/
+	 display:inline-block;
+ }
+ .beautytitle{			/*amusement上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.beautytitle span{		/*amusement上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.beautytitle a:hover{		/*amusement上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.beautyul a:hover{		/*amusement上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .beautyul li{			/*amusement上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.beautyul li.cur{
+	border-right:none;
+	color:#6F6682;
+
+}
+.beautybox {				/*amusement下方整体样式*/
+	 height:674px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.beautybox1{			/*amusement1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty a:hover{
+	text-decoration:none;
+}
+.beauty-star-out1{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in1{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox2{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out2{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in2{
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox3{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out3{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in3{
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox4{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out4{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in4{
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+
+.beautybox5{			/*box1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out5{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in5{
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox6{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out6{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in6{
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox7{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out7{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in7{
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+}
+.beautybox8{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.beauty-star-out8{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.beauty-star-in8{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.beautymore{
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.beautymore a:hover{
+	text-decoration:none;
+}
+ <!------------------------------------------------------beauty 结束--->  
+
+
+
+
+
+
+
+
+  <!------------------------------------------------------travel 开始---> 
+ .travel{					/*amusement整体样式*/
+	 display:inline-block;
+ }
+ .traveltitle{			/*amusement上方导航栏整体样式*/
+	 width:1170px;
+	 height:30px;
+	 display:inline-block;
+}
+.traveltitle span{		/*amusement上方导航栏左边文字样式*/
+	font-size:20px;
+	line-height:30px;
+}
+.traveltitle a:hover{		/*amusement上方导航栏左边文字鼠标覆盖的样式*/
+	color:#666;
+	text-decoration:none;
+}
+.travelul a:hover{		/*amusement上方导航栏右边单个文字鼠标覆盖的样式*/
+	color:#2bb8aa;
+	text-decoration:none;
+}
+ .travelul li{			/*amusement上方导航栏右边单个文字样式*/
+	float:left;
+	color:#CCC;
+	font-size:14px;
+	padding:0 9px;
+	border-right:1px solid #DDDDDD;
+	margin-top:9px;
+}
+.travelul li.cur{
+	border-right:none;
+	color:#6F6682;
+
+}
+.travelbox {				/*amusement下方整体样式*/
+	 height:674px;
+	 width:1168px;
+	 border:1px solid #eeeeee;
+	 margin-top:13px;
+}
+.travelbox1{			/*amusement1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel a:hover{
+	text-decoration:none;
+}
+.travel-star-out1{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in1{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.travelbox2{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .travelbox2-icon-item1{
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.travel-star-out2{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in2{
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+}
+.travelbox3{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel-star-out3{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in3{
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+}
+.travelbox4{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel-star-out4{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in4{
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+
+.travelbox5{			/*box1的整体样式*/
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel-star-out5{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in5{
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+}
+.travelbox6{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.imgbox .travelbox6-icon-item1{
+	background:url("../images/base.png") 0 -454px no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	top:9px;
+	left:14px;
+
+}
+.travel-star-out6{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in6{
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+}
+.travelbox7{
+	width:291px;
+	height:311px;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel-star-out7{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in7{
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+}
+.travelbox8{
+	width:292px;
+	height:311px;
+	border-bottom:1px solid #EEEEEE;
+}
+.travel-star-out8{
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+}
+.travel-star-in8{
+	background:url("../images/star-hover.png");
+	width:57px;
+	height:12px;
+	display:inline-block;
+}
+
+.travelmore{
+	width:1170px;
+	height:50px;
+	background:#eeeeee;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	color:#666;
+	margin-bottom:25px;
+	display:inline-block;
+}
+.travelmore a:hover{
+	text-decoration:none;
+}
+ <!------------------------------------------------------travel 结束--->  
+

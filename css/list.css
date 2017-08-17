@@ -1,0 +1,1976 @@
+@charset "utf-8";
+
+/*food导航栏开始*/
+.foodnav{				/*foodnav整体样式*/
+	height:240px;
+	border:1px solid #EEEEEE;
+}
+.foodtotal{				/*"全部"一栏样式*/
+	height:45px;
+	width:950px;
+	margin-left:15px;
+	border-bottom:1px dotted #EEEEEE;
+	position:relative;
+}
+.foodtotal .foodtotal-all{		/*"全部"字体样式*/	
+	height:19px;
+	width:40px;
+	line-height: 19px;
+	text-align:center;
+	margin-top:12px;
+	display: inline-block;
+	border:1px solid #2BB8AA;
+	font-size:10px;
+}
+.foodtotal .foodtotal-all a:hover{		/*"全部"鼠标覆盖上去字体样式*/	
+	color:#666666;
+	text-decoration: none;
+}
+
+
+.foodtotal-cate .icon-tri{		/*三角图标*/	
+	border:3px solid transparent;
+	border-top-color:#666;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	position: absolute;
+	top:8px;
+	right:4px;
+}
+.foodtotal-cate{    		/*表示有下拉内容的div*/
+	display: inline-block;
+	position :relative;
+}
+.foodtotal-cate .foodtotal-cate-a{   		/*表示有下拉内容的a*/
+	height:19px;
+	width:48px;
+	line-height: 19px;
+	text-align:center;
+	margin-top:12px;
+	display: inline-block;
+	border:1px solid #2BB8AA;
+	font-size:10px;
+	position :relative;
+	z-index:3;
+	background: #fff;
+}
+.foodtotalmenu{  		/*表示下拉内容*/
+	display: none; /*默认隐藏*/
+	border:1px solid #2BB8AA;
+	width:293px;
+	height:85px;
+	position:absolute;
+	top:31px;
+	left:0px;
+	background:#fff;
+	z-index:2;
+}
+.icon-tri1{				/*三角图标*/	
+	border:3px solid transparent;
+	border-top-color:#666;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	position: absolute;
+	top:10px;
+	right:5px;
+}
+.foodtotalmenu a:hover{
+	text-decoration: none;
+}
+.foodtotalmenu ul li{	/*foodtotalmenu里面的每个li的样式*/
+	font-size:12px;
+	float:left;
+	color:#DDDDDD;
+	padding:5px 0;
+}
+.foodtotalmenu a{		/*foodtotalmenu里面的a的左右外边距*/
+	padding-left:10px;
+	padding-right:10px;
+}
+.foodtotal-cate .foodtotal-cate-a:hover{ 		/*1.改变a标记的背景色，边框*/
+	border-bottom:0;
+}
+.foodtotal-cate:hover .foodtotalmenu{			/*2.把foodtotalmenu显示出来*/
+	display: block;
+}
+.foodtotal-cate:hover .foodtotal-cate-a{	/*2.把foodtotal-cate-a下边框去掉*/
+	border-bottom:none;
+	text-decoration: none;
+}
+.foodtotal-cate:hover .icon-tri1{  /*3.更改三角形*/
+	border:3px solid transparent;
+	border-bottom-color:#2bb8aa;
+	top:6px;
+}
+.foodtotal-cate:hover .foodtotal-cate-a{
+	color:#2bb8aa;;
+}
+
+
+.foodclass{			/*"分类"一栏整体样式*/
+	height:86px;
+	width:950px;
+	margin-left:15px;
+	border-bottom:1px dotted #EEEEEE;
+}
+.foodclass span{	/*"分类"两个字样式*/
+	height:19px;
+	width:36px;
+	line-height: 19px;
+	font-size:12px;
+	vertical-align: top;
+	display:inline-block;
+	margin-top:12px;
+}
+.foodclass ul{		/*"分类"一栏ul整体样式*/
+	width:810px;
+	margin-left:0;
+	display: inline-block;
+	margin-top:10px;
+	vertical-align: top;
+}
+.foodclass ul li {		/*"分类"一栏下面单个li样式*/
+	display:inline-block;
+	font-size:12px;
+	
+	margin-top:2px;
+	margin-right:9px;
+}
+.foodclass ul li a{		/*"分类"一栏下面单个li里每个a的样式*/
+	display:inline-block;
+	padding:2px 5px 2px 4px;
+	border:1px solid #fff;
+	border-radius:3px;
+}
+.foodclass ul li a:hover{	/*"分类"一栏下面单个li里每个a鼠标覆盖上去的样式*/
+	background: #2BB8AA;
+	color:#fff;
+	text-decoration: none;
+}
+.foodclass ul li.cur a{		/*"分类"一栏下面特殊a蓝色背景的样式*/
+	background: #2BB8AA;
+	border-radius:3px;
+	color:#fff;
+}
+
+.foodclass ul li.redsize a{		/*"分类"一栏下面特殊a红色字体的样式*/
+	color:#F76120;
+}
+.foodclass ul li.redsize a:hover{		/*"分类"一栏下面特殊a红色字体鼠标覆盖上去的样式*/
+	color:#fff;
+}
+
+
+.foodarea{		/*"区域"一栏整体样式*/
+	height:65px;
+	width:950px;
+	margin-left:15px;
+	border-bottom:1px dotted #EEEEEE;
+}
+.foodarea span{		/*"区域"两个字样式*/
+	height:19px;
+	width:36px;
+	line-height: 19px;
+	font-size:12px;
+	vertical-align: top;
+	display:inline-block;
+	margin-top:12px;
+}
+.foodarea ul{		/*"区域"一栏ul整体样式*/
+	width:810px;
+	margin-left:0;
+	display: inline-block;
+	margin-top:10px;
+	vertical-align: top;
+}
+.foodarea ul li {		/*"区域"一栏下面单个li样式*/
+	display:inline-block;
+	font-size:12px;
+	margin-top:2px;
+}
+.foodarea ul li a{		/*"区域"一栏下面单个li里每个a的样式*/
+	display:inline-block;
+	padding:2px 5px 2px 9px;
+	border:1px solid #fff;
+	border-radius:3px;
+}
+.foodarea ul li a i{	/*"区域"一栏下面特殊红色图标的样式*/
+	width:11px;
+	height:14px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -3px -1057px;
+	vertical-align: top;
+}
+.foodarea ul li a:hover i{	/*"区域"一栏下面特殊红色图标鼠标覆盖上去白色的样式*/
+	width:11px;
+	height:14px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -3px -1037px;
+	vertical-align: top;
+}
+.foodarea ul li a:hover{		/*"区域"一栏下面单个li里每个a鼠标覆盖上去的样式*/
+	background: #2BB8AA;
+	color:#fff;
+	text-decoration: none;
+}
+.foodarea ul li.cur a{		/*"区域"一栏下面特殊a蓝色背景的样式*/
+	background: #2BB8AA;
+	border-radius:3px;
+	color:#fff;
+}
+.foodarea ul li.redsize a{		/*"区域"一栏下面特殊a红色字体的样式*/
+	color:#F76120;
+}
+
+.foodarea ul li.redsize a:hover{		/*"区域"一栏下面特殊a红色字体鼠标覆盖上去的样式*/
+	color:#fff;
+}
+
+
+.foodpeople{		/*"人数"一栏整体样式*/
+	height:42px;
+	width:950px;
+	margin-left:15px;
+}
+.foodpeople span{		/*"人数"两个字样式*/
+	height:19px;
+	width:36px;
+	line-height: 19px;
+	font-size:12px;
+	vertical-align: top;
+	display:inline-block;
+	margin-top:12px;
+}
+.foodpeople ul{		/*"人数"一栏ul整体样式*/
+	width:810px;
+	margin-left:0;
+	display: inline-block;
+	margin-top:10px;
+	vertical-align: top;
+}
+.foodpeople ul li {		/*"人数"一栏下面单个li样式*/
+	display:inline-block;
+	font-size:12px;
+	margin-top:2px;
+	margin-right:9px;
+}
+.foodpeople ul li a{		/*"人数"一栏下面单个li里每个a的样式*/
+	display:inline-block;
+	padding:2px 5px 2px 4px;
+	border:1px solid #fff;
+	border-radius:3px;
+}
+.foodpeople ul li a:hover{		/*"人数"一栏下面单个li里每个a鼠标覆盖上去的样式*/
+	background: #2BB8AA;
+	color:#fff;
+	text-decoration: none;
+}
+.foodpeople ul li.cur a{	/*"人数"一栏下面特殊a的样式*/
+	background: #2BB8AA;
+	border-radius:3px;
+	color:#fff;
+}
+/*food导航栏结束*/
+
+
+/*food默认栏开始*/
+.foodsort{			/*"默认"一栏整体样式*/			
+	height:29px;
+	border:1px solid #EEEEEE;
+	margin-top:8px;
+}
+.foodsort ul {			/*"默认"一栏ul整体样式*/			
+	float: left;
+	height:29px;
+	width:490px;
+}
+.foodsort ul li{			/*"默认"一栏下面单个li样式*/			
+	float: left;
+	font-size:12px;
+	border-right:1px solid #DDDDDD;
+	height:29px;
+	line-height:29px;
+}
+.foodsort ul li a{			/*"默认"一栏下面单个li里每个a的样式*/			
+	display:inline-block;
+	padding:0 19px;
+	color:#333333;
+}
+.foodsort ul li.cur a{		/*"默认"一栏下面特殊a的样式*/		
+	color:#2BB8AA;
+	border-top:2px solid #2BB8AA;
+}
+.foodsort ul li a:hover{		/*"默认"一栏下面单个li里每个a鼠标覆盖上去的样式*/	
+	text-decoration:none;
+	color:#2bb8aa;
+}
+.foodsort ul li a i{		/*"默认"一栏下面特殊下降箭头图标灰色的样式*/
+	width:7px;
+	height:8px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -1px -821px;
+}
+.foodsort ul li a:hover i{		/*"默认"一栏下面特殊下降箭头图标鼠标覆盖上去蓝色的样式*/
+	width:7px;
+	height:8px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -1px -811px;
+}
+.foodsort ul li a b{		/*"默认"一栏下面特殊上升箭头图标灰色的样式*/
+	width:7px;
+	height:8px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -1px -22px;
+}
+.foodsort ul li a:hover b{		/*"默认"一栏下面特殊上升箭头图标鼠标覆盖上去蓝色的样式*/
+	width:7px;
+	height:8px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -1px -12px;
+}
+
+
+.toggleli{				/*表示一个有下拉内容的li*/
+	position:relative;
+}
+.toggle-a{  					 /*表示一个有下拉内容的a*/
+	position:relative;
+	z-index:4;
+	height: 27px;
+	line-height: 27px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	background: #fff;
+	vertical-align: top;
+}
+.togglemenu1{  						/*表示下拉内容*/      
+	display:none;/*默认隐藏*/
+	background: #fff;
+	position: absolute;
+	top:26px;
+	left:-1px;
+	white-space: nowrap; /*不要换行*/
+	border:1px solid #ddd;
+	z-index:3;
+	padding:0;
+}
+.togglemenu1 dl dd a{
+	padding:0 14px;
+}
+.togglemenu1 dl dd a:hover{
+	color:#2bb8aa;
+}
+.togglemenu1 dl dd:hover{
+	background: #EEEEEE;
+}
+.toggleli:hover .togglemenu1{			/*2.把togglemenu显示出来*/
+	display: block;
+}
+.toggleli:hover .icon-tri{  /*3.更改三角形*/
+	border:3px solid transparent;
+	border-bottom-color:#2bb8aa;
+	top:10px;
+}
+.foodsort span{		/*"默认"一栏右面每个span的样式*/	
+	height:29px;
+	float: left;
+}
+.foodsort span a{		/*"默认"一栏右面每个span里a的样式*/
+	font-size:12px;
+	height:29px;
+	line-height: 29px;
+	padding:0 15px;
+	color:#333333;
+	display: inline-block;
+}
+.foodsort span a:hover{		/*"默认"一栏右面每个span里a鼠标覆盖上去的样式*/
+	text-decoration:none;
+	color:#333333;
+}
+.foodsort span a i{			/*"默认"一栏右面每个span里a前门小图标的样式*/
+	width:11px;
+	height:11px;
+	display: inline-block;
+	background: url(../images/base.png) no-repeat -3px -99px;
+}
+/*food默认栏结束*/
+
+
+
+
+/*item开始*/
+.item{		/*item整体样式*/
+	height:14370px;
+}
+.itembox{	/*itembox整体样式*/
+	height:14224px;
+	width:714px;
+	float:left;
+}
+.itembox img{	/*itembox里图片的整体样式*/
+	height:214px;
+	width:346px;
+}
+.item-menu{		/*itembox里菜单栏的整体样式*/
+	height:16px;
+	width:310px;
+	padding:0 18px;
+	display: inline-block;
+	position: relative;
+	margin-top:15px;
+
+}
+.item-menu span{	/*itembox里菜单栏里“商家”样式*/
+	width:27px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	font-size:12px;
+	background: #9E9E9E;
+	color:#fff;
+	display: inline-block;
+	vertical-align:top;
+}
+.item-menu p{		/*itembox里菜单栏里“文字”样式*/
+	height:16px;
+	line-height: 16px;
+	font-size:16px;
+	display: inline-block;
+	vertical-align:top;
+}
+.item-menu .icon-item1{		/*itembox里菜单栏里单个“团”图标样式*/
+	width:16px;
+	height:16px;
+	display: inline-block;
+	background: url(../images/mt-sp3.png) no-repeat 0 -205px;
+	position: absolute;
+	top:0;
+	right:18px;
+}
+.item-menu .icon-item2-1{		/*itembox里菜单栏里“团”和“券”图标样式*/
+	width:16px;
+	height:16px;
+	display: inline-block;
+	background: url(../images/mt-sp3.png) no-repeat 0 -205px;
+	position: absolute;
+	top:0;
+	right:39px;
+}
+.item-menu .icon-item2-2{		/*itembox里菜单栏里“团”和“券”图标样式*/
+	width:16px;
+	height:16px;
+	display: inline-block;
+	background: url(../images/mt-sp3.png) no-repeat 0 -169px;
+	position: absolute;
+	top:0;
+	right:18px;
+}
+.item-menu .icon-item2{		/*itembox里菜单栏里单个“券”图标样式*/
+	width:16px;
+	height:16px;
+	display: inline-block;
+	background: url(../images/mt-sp3.png) no-repeat 0 -169px;
+	position: absolute;
+	top:0;
+	right:18px;
+}
+.item-info{			/*item-info整体样式*/
+	height:14px;
+	width:310px;
+	padding:0 18px;
+	display: inline-block;
+	margin-top:18px;
+}
+.item-info a{		/*item-info里面a的样式*/
+	font-size:12px;
+	vertical-align: top;
+	color:#999999;
+}
+.item-info a:hover{		/*item-info里面a鼠标覆盖上去的样式*/
+	color:#2bb8aa;
+	text-decoration: none;
+}
+.item-extra{			/*item-extra整体样式*/
+	height:44px;
+	width:310px;
+	padding:0 18px;
+	border-top:1px dotted #DDDDDD;
+	font-size:14px;
+	line-height:44px;
+	color:#999999;
+	background: #F9F9F9;
+	display:inline-block;
+	margin-top:8px;
+}
+.item-extra a{		/*item-extra里面a的样式*/
+	color:#999999;
+}
+.item-extra a:hover{		/*item-extra里面a鼠标覆盖上去的样式*/
+	text-decoration: none;
+	color:#999999;
+}
+
+
+.item-box1{		/*item-box1整体样式*/
+	width:346px;
+	height:342px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	margin-right:10px;
+	margin-bottom:18px;
+}
+.item-box1:hover{	/*item-box1覆盖上去的样式*/
+	border:1px solid #2BB8AA;
+}
+.item-box1-star-out1{		/*item-box1中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box1-star-in1{		/*item-box1中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.item-box2{		/*item-box2整体样式*/
+	width:346px;
+	height:342px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	margin-bottom:18px;
+}
+.item-box2:hover{		/*item-box2覆盖上去的样式*/
+	border:1px solid #2BB8AA;
+}
+.item-box2-star-out1{		/*item-box2中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box2-star-in1{		/*item-box2中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.item-box3-star-out1{		/*item-box3中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box3-star-in1{		/*item-box3中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box4-star-out1{		/*item-box4中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box4-star-in1{		/*item-box4中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.item-box5-star-out1{		/*item-box5中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box5-star-in1{		/*item-box5中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box6-star-out1{		/*item-box6中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box6-star-in1{		/*item-box6中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box7-star-out1{		/*item-box7中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box7-star-in1{		/*item-box7中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box8-star-out1{		/*item-box8中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box8-star-in1{		/*item-box8中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.item-box9-star-out1{		/*item-box9中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box9-star-in1{		/*item-box9中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box10-star-out1{		/*item-box10中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box10-star-in1{		/*item-box10中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box11-star-out1{		/*item-box11中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box11-star-in1{		/*item-box11中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box12-star-out1{		/*item-box12中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box12-star-in1{		/*item-box12中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box13-star-out1{		/*item-box13中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box13-star-in1{		/*item-box13中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box14-star-out1{		/*item-box14中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box14-star-in1{		/*item-box14中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box15-star-out1{		/*item-box15中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box15-star-in1{		/*item-box15中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box16-star-out1{		/*item-box16中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box16-star-in1{		/*item-box16中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box17-star-out1{		/*item-box17中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box17-star-in1{		/*item-box17中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box18-star-out1{		/*item-box18中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box18-star-in1{		/*item-box18中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box19-star-out1{		/*item-box19中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box19-star-in1{		/*item-box19中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box20-star-out1{		/*item-box20中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box20-star-in1{		/*item-box20中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+
+
+.item-box21-star-out1{		/*item-box21中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box21-star-in1{		/*item-box21中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box22-star-out1{		/*item-box22中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box22-star-in1{		/*item-box22中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box23-star-out1{		/*item-box23中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box23-star-in1{		/*item-box23中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box24-star-out1{		/*item-box24中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box24-star-in1{		/*item-box24中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box25-star-out1{		/*item-box25中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box25-star-in1{		/*item-box25中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box26-star-out1{		/*item-box26中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box26-star-in1{		/*item-box26中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box27-star-out1{		/*item-box27中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box27-star-in1{		/*item-box27中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box28-star-out1{		/*item-box28中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box28-star-in1{		/*item-box28中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box29-star-out1{		/*item-box29中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box29-star-in1{		/*item-box29中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box30-star-out1{		/*item-box30中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box30-star-in1{		/*item-box30中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box31-star-out1{		/*item-box31中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box31-star-in1{		/*item-box31中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box32-star-out1{		/*item-box32中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box32-star-in1{		/*item-box32中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box33-star-out1{		/*item-box33中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box33-star-in1{		/*item-box33中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box34-star-out1{		/*item-box34中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box34-star-in1{		/*item-box34中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box35-star-out1{		/*item-box35中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box35-star-in1{		/*item-box35中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box36-star-out1{		/*item-box36中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box36-star-in1{		/*item-box36中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+
+.item-box37-star-out1{		/*item-box37中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box37-star-in1{		/*item-box37中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box38-star-out1{		/*item-box38中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box38-star-in1{		/*item-box38中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box39-star-out1{		/*item-box39中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box39-star-in1{		/*item-box39中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box40-star-out1{		/*item-box40中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box40-star-in1{		/*item-box40中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+.item-box41-star-out1{		/*item-box41中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box41-star-in1{		/*item-box41中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box42-star-out1{		/*item-box42中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box42-star-in1{		/*item-box42中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.item-box43-star-out1{		/*item-box43中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box43-star-in1{		/*item-box43中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box44-star-out1{		/*item-box44中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box44-star-in1{		/*item-box44中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.item-box45-star-out1{		/*item-box45中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box45-star-in1{		/*item-box5中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box46-star-out1{		/*item-box46中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box46-star-in1{		/*item-box46中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box47-star-out1{		/*item-box47中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box47-star-in1{		/*item-box47中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box48-star-out1{		/*item-box48中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box48-star-in1{		/*item-box48中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:50px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.item-box49-star-out1{		/*item-box49中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box49-star-in1{		/*item-box49中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box50-star-out1{		/*item-box50中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box50-star-in1{		/*item-box50中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box51-star-out1{		/*item-box51中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box51-star-in1{		/*item-box51中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box52-star-out1{		/*item-box52中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box52-star-in1{		/*item-box52中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box53-star-out1{		/*item-box53中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box53-star-in1{		/*item-box53中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box54-star-out1{		/*item-box54中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box54-star-in1{		/*item-box54中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box55-star-out1{		/*item-box55中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box55-star-in1{		/*item-box55中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box56-star-out1{		/*item-box56中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box56-star-in1{		/*item-box56中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box57-star-out1{		/*item-box57中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box57-star-in1{		/*item-box57中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box58-star-out1{		/*item-box58中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box58-star-in1{		/*item-box58中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box59-star-out1{		/*item-box59中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box59-star-in1{		/*item-box59中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box60-star-out1{		/*item-box60中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box60-star-in1{		/*item-box60中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+.item-box61-star-out1{		/*item-box61中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box61-star-in1{		/*item-box61中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box62-star-out1{		/*item-box62中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box62-star-in1{		/*item-box62中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box63-star-out1{		/*item-box63中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box63-star-in1{		/*item-box63中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box64-star-out1{		/*item-box64中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box64-star-in1{		/*item-box64中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box65-star-out1{		/*item-box65中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box65-star-in1{		/*item-box65中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+
+.item-box66-star-out1{		/*item-box66中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box66-star-in1{		/*item-box66中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box67-star-out1{		/*item-box67中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box67-star-in1{		/*item-box67中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box68-star-out1{		/*item-box68中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box68-star-in1{		/*item-box68中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box69-star-out1{		/*item-box69中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box69-star-in1{		/*item-box69中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:53px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box70-star-out1{		/*item-box70中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box70-star-in1{		/*item-box70中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.item-box71-star-out1{		/*item-box71中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box71-star-in1{		/*item-box71中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:56px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box72-star-out1{		/*item-box72中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box72-star-in1{		/*item-box72中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:52px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box73-star-out1{		/*item-box73中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box73-star-in1{		/*item-box73中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box74-star-out1{		/*item-box74中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box74-star-in1{		/*item-box74中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:55px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box75-star-out1{		/*item-box75中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box75-star-in1{		/*item-box75中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box76-star-out1{		/*item-box76中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box76-star-in1{		/*item-box76中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box77-star-out1{		/*item-box77中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box77-star-in1{		/*item-box77中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:54px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box78-star-out1{		/*item-box78中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box78-star-in1{		/*item-box78中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:58px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+.item-box79-star-out1{		/*item-box79中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box79-star-in1{		/*item-box79中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:51px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box80-star-out1{		/*item-box80中评价栏目星星灰色图片样式*/
+	background:url("../images/star.png");
+	width:60px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+.item-box80-star-in1{		/*item-box80中评价栏目星星橘黄色图片样式*/
+	background:url("../images/star-hover.png");
+	width:59px;
+	height:12px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+
+
+
+
+.item-footer{		/*item底部样式*/
+	height:36px;
+	width:385px;
+	margin:0 auto;
+	margin-top:70px;
+}
+.item-footer ul li.cur{		/*item底部第一个特殊样式*/
+	padding:11px 13px 12px 12px;
+	border:1px solid #2bb8aa;
+	font-size:14px;
+	color:#fff;
+	font-weight:bolder;
+	background: #2bb8aa;
+}
+.item-footer ul li{			/*item底部每个li样式*/
+	display: inline-block;
+	color:#2bb8aa;	
+}
+.item-footer ul li a{		/*item底部每个li下面a的样式*/
+	font-size:16px;
+	color:#2bb8aa;
+	padding:11px 13px 12px 13px;
+	border:1px solid #EEEEEE;
+	font-weight:bolder;
+	display: inline-block;
+}
+.item-footer ul li a:hover{		/*item底部每个li下面a鼠标覆盖上去的样式*/
+	border:1px solid #2bb8aa;
+	text-decoration: none;
+}
+
+
+
+
+
+.itembar{			/*item侧边栏样式*/
+	height:14370px;
+	width:240px;
+	float:right;
+}
+.itembar-extension{		/*item侧边栏第一个box样式*/
+	height:340px;
+	width:198px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	padding:0 20px;
+}
+.itembar-extension-phone{	/*item侧边栏第一个box里“手机美团”图片样式*/
+	background: url(../images/sidebar1.png) no-repeat;
+	height:110px;
+	width:198px;
+	display: inline-block;
+}
+.itembar-extension-movie{		/*item侧边栏第一个box里“猫眼电影”图片样式*/
+	background: url(../images/sidebar2.png) no-repeat;
+	height:110px;
+	width:198px;
+	display: inline-block;
+	border-top:1px dotted #ddd;
+}
+.itembar-extension-agency{		/*item侧边栏第一个box里“美团千城代理”图片样式*/
+	background: url(../images/sidebar3.png) no-repeat;
+	height:110px;
+	width:198px;
+	display: inline-block;
+	border-top:1px dotted #ddd;
+}
+
+
+.itembar-guess{		/*item侧边栏第二个box“猜你喜欢”总体样式*/
+	height:1197px;
+	width:198px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	padding:0 20px;
+	margin-top:16px;
+}
+.itembar-guess h3{		/*item侧边栏第二个box“猜你喜欢”文字样式*/
+	font-size:16px;
+	font-weight:bold;
+	margin-top:16px;
+}
+.itembar-guessbox{		/*item侧边栏第二个box“猜你喜欢”文字样式*/
+	height:214px;
+	width:198px;
+	border-bottom:1px dotted #EEEEEE;
+	display: inline-block;
+	margin-top:18px;
+	position: relative;
+}
+.itembar-guess img{		/*item侧边栏第二个box“猜你喜欢”里图片样式*/
+	height:120px;
+	width:198px;
+}
+.itembar-guessbox i{	/*item侧边栏第二个box“猜你喜欢”里图片上面小图标样式*/
+	width:18px;
+	height:17px;
+	display: inline-block;
+	background: url(../images/mt-sp2.png) no-repeat 0 -209px;
+	top:-2px;
+	left:0;
+	position: absolute;
+	color:#fff;
+	font-size:10px;
+	font-weight:bold;
+	line-height: 17px;
+	text-align: center;
+}
+.itembar-guessbox p{		/*item侧边栏第二个box“猜你喜欢”里菜单文字样式*/
+	font-size:13px;
+	font-weight:bold;
+	margin-top:18px;
+}
+.itembar-guessbox a:hover {		/*item侧边栏第二个box“猜你喜欢”里菜单文字超链接鼠标覆盖上去样式*/
+	text-decoration:none;
+	color:#2bb8aa;
+}
+.itembar-info{		/*item侧边栏第二个box“猜你喜欢”里价格文字样式*/
+	margin-top:11px;
+	height:18px;
+	display:inline-block;
+}
+
+
+.itembar-prize{		/*item侧边栏第三个box“0元抽奖”总体样式*/
+	height:154px;
+	width:238px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	margin-top:16px;
+}
+.itembar-prize a{	/*item侧边栏第三个box“0元抽奖”里 a链接样式*/
+	width:238px;
+	height:47px;
+	display: inline-block;
+	background: url(../images/mt-sp1.png) no-repeat 0px -777px;
+}
+.itembar-prize span{		/*item侧边栏第三个box“0元抽奖”下面 图片和文字部分整体样式*/
+	display: inline-block;
+	width:238px;
+	height:61px;
+	margin-top:22px;
+}
+.itembar-prize i{		/*item侧边栏第三个box“0元抽奖”里 i标签样式*/
+	width:70px;
+	height:61px;
+	display: inline-block;
+	background: url(../images/mt-sp1.png) no-repeat 0px -846px;
+	vertical-align: top;
+}
+.itembar-prize p{	/*item侧边栏第三个box“0元抽奖”里 文字部分总体样式*/
+	display:inline-block;
+	height:61px;
+	width:156px;
+	vertical-align: top;
+}
+.itembar-prize em{	/*item侧边栏第三个box“0元抽奖”里 文字部分单行文字样式*/
+	font-size:12px;
+	width:156px;
+	height:12px;
+	color:#666666;
+	margin-top:6px;
+	display:inline-block;
+	margin-left:3px;
+}
+.itembar-recruitment{	/*item侧边栏第四个box“校园招聘”里 总体样式*/
+	height:290px;
+	width:238px;
+	border:1px solid #EEEEEE;
+	display: inline-block;
+	margin-top:16px;
+}
+.itembar-recruitment em{	/*item侧边栏第四个box“校园招聘”里 图片整体样式*/
+	width:238px;
+	height:120px;
+	display: inline-block;
+	background: url(../images/mt-sp1.png) no-repeat 0px -183px;
+}
+.itembar-recruitment-opinion{	/*item侧边栏第四个box“意见反馈和商务合作”总体样式*/
+	height:168px;
+	width:198px;
+	display: inline-block;
+	padding:0 20px;
+}
+.itembar-recruitment-opinion .span1{/*item侧边栏第四个box“意见反馈”里 整体样式*/
+	height:75px;
+	width:198px;
+	display: inline-block;
+	border-bottom: 1px dotted #DDDDDD;
+}
+.itembar-recruitment-opinion .span1 i{/*item侧边栏第四个box“意见反馈”里 图片样式*/
+	width:198px;
+	height:37px;
+	display: inline-block;
+	background: url(../images/mt-sp1.png) no-repeat 0px -517px;
+}
+.itembar-recruitment-opinion .span1 p{/*item侧边栏第四个box“意见反馈”里 文字样式*/
+	font-size:12px;
+	margin-left:40px;
+}
+.itembar-recruitment-opinion .span1 a:hover{/*item侧边栏第四个box“意见反馈”里 文字鼠标覆盖样式*/
+	text-decoration: none;
+}
+
+
+.itembar-recruitment-opinion .span2{/*item侧边栏第四个box“商务合作”里 整体样式*/
+	height:75px;
+	width:198px;
+	display: inline-block;
+}
+.itembar-recruitment-opinion .span2 b{/*item侧边栏第四个box“商务合作”里 图片样式*/
+	width:198px;
+	height:37px;
+	display: inline-block;
+	background: url(../images/mt-sp1.png) no-repeat 0px -100px;
+}
+.itembar-recruitment-opinion .span2 span{/*item侧边栏第四个box“商务合作”里 文字样式*/
+	font-size:12px;
+	margin-left:40px;
+}
+.itembar-recruitment-opinion .span2 a:hover span{/*item侧边栏第四个box“商务合作” 鼠标覆盖整体样式*/
+	text-decoration: none;
+	color:#666666;
+}
+.itembar-recruitment-opinion .span2 p{/*item侧边栏第四个box“商务合作” 里文字样式*/
+	font-size:12px;
+	margin-left:40px;
+	margin-top:5px;
+}
+.itembar-recruitment-opinion .span2 a:hover{/*item侧边栏第四个box“意见反馈”里 文字鼠标覆盖样式*/
+	text-decoration: none;
+}
+/*item结束*/

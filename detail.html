@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>美团网详情页</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <base target="_blank">
+</head>
+<body>
+<!---导航栏开始-->
+	<div class="topbox mb10">
+		<div class="top sec980">
+        	<div class="basic fl">
+            	<ul>
+                	<li>
+                    	<a href="">
+                        	<i class="collect"></i>
+                        	收藏美团
+                            <i class="kong"></i>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="https://passport.meituan.com/account/unitivelogin?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F&mtt=1.index%2Ffloornew.0.0.ix17bg0u"  ">
+                        	<div class="denglucolor">
+                        		登录
+                            	<i class="kong"></i>
+                             </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="https://passport.meituan.com/account/unitivesignup?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F&mtt=1.index%2Ffloornew.0.0.ix1fjvtt"  ">
+                        	注册
+                            <i class="kong"></i>
+                        </a>
+                    </li>
+                    <li id="li1" class="toggleli">
+                    	<a class="togglea" href="">
+                        	<i class="icon-phone"></i>
+                        	手机美团
+                            <i class="icon-tri"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<div>
+                        		<a href="">免费下载美团手机版</a>
+                                <img src="images/weixin1.png" alt=""/>
+                            </div>
+                            <div>
+                            	<a href="">免费下载猫眼电影手机版</a>
+                                <img src="images/weixin1.png" alt=""/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="user fr">
+            	<ul>
+                	<li><a href="http://www.meituan.com/orders/?mtt=1.index%2Ffloornew.0.0.ix1fm1nf"  ">我的订单</a></li>
+                    <li id="li2" class="toggleli ">
+                    	<a class="togglea" href="http://www.meituan.com/orders/?mtt=1.orders%2Flist.0.0.ix1fmr63"  ">
+                        	我的美团
+                            <i class="icon-tri"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<ul>
+                            	<li><a href="http://www.meituan.com/orders/?mtt=1.orders%2Flist.0.0.ix1fn2h5"  ">我的订单</a></li>
+                                <li><a href="http://www.meituan.com/rates/?mtt=1.orders%2Flist.0.0.ix1fnfo5"  " >我的评价</a></li>
+                                <li><a href="http://www.meituan.com/collections/?mtt=1.rates%2Flist.0.0.ix1fntve"  ">我的收藏</a></li>
+                                <li><a href="http://www.meituan.com/card/list?mtt=1.collections%2Flist.0.0.ix1foapw"  ">抵用卷</a></li>
+                                <li><a href="http://www.meituan.com/account/credit?mtt=1.card%2Flist.0.0.ix1fored"  ">我的余额</a></li>
+                                <li><a href="http://www.meituan.com/account/settings?mtt=1.account%2Fcredit.0.0.ix1fp727"  ">账户设置</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="li3" class="toggleli">
+                    	<a class="togglea"  href="">
+                        	最近浏览
+                            <i class="icon-tri"></i>
+                            <i class="vertical-line"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<div class="togglekong">
+                            	暂无浏览记录
+                            </div>
+                        </div>
+                    </li>
+                    <li id="li4" class="toggleli">
+                    	<a class="togglea"  href="http://www.meituan.com/cart/?mtt=1.cart%2Fdefault.0.0.ix1fq9l4"  ">
+                        	购物车0件
+                            <i class="icon-tri"></i>
+                            <i class="vertical-line"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<div class="togglekong">
+                            	暂时没有商品
+                            </div>
+                        </div>
+                    </li>
+                    <li id="li5" class="toggleli">
+                    	<a class="togglea" href="http://www.meituan.com/help/selfservice?mtt=1.cart%2Fdefault.0.0.ix1fqdb8"  ">
+                        	联系客服
+                            <i class="icon-tri"></i>
+                            <i class="vertical-line"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<ul>
+                            	<li><a href="http://www.meituan.com/help/selfservice?mtt=1.help%2Fselfservice.0.0.ix1fr2ou"  ">申请退款</a></li>
+                                <li><a href="http://www.meituan.com/help/selfservice?tab=1&mtt=1.help%2Fselfservice.0.0.ix1frfh3"  ">申请退换货</a></li>
+                                <li><a href="http://www.meituan.com/help/selfservice?tab=2&mtt=1.help%2Fselfservice.0.0.ix1frqax"  ">查看美团券</a></li>
+                                <li><a href="http://www.meituan.com/help/selfservice?tab=3&mtt=1.help%2Fselfservice.0.0.ix1fs3dw"  ">绑定手机号</a></li>
+                                <li><a href="http://www.meituan.com/help/faq?mtt=1.help%2Fselfservice.0.0.ix1fu069"  ">常见问题</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="li6" class="toggleli">
+                    	<a class="togglea" href="">
+                        	我是商家
+                            <i class="icon-tri"></i>
+                            <i class="vertical-line"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<ul>
+                            	<li><a href="https://epassport.meituan.com/account/login?service=ecom&continue=http%3A%2F%2Fe.meituan.com%2Faccount%2Fsettoken&mtt=1.help%2Ffaq.0.0.ix1fubhn"  ">登录商家中心</a></li>
+                                <li><a href="http://emis.meishi.meituan.com/merchantsSettled?mtt=1.help%2Ffaq.0.0.ix1fvw9b"  ">我想合作</a></li>
+                                <li><a href="http://e.meituan.com/mobile/?fr=tuantop&mtt=1.help%2Ffaq.0.0.ix1fwn89"  ">手机免费开店</a></li>
+                                <li><a href="http://zhaoshang.meituan.com/?mtt=1.help%2Ffaq.0.0.ix1fwn89"  ">商家营销平台</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                    	<a class="togglea" href="http://daili.meituan.com/?comeFrom=mtwebMenu&mtt=1.help%2Ffaq.0.0.ix1fxtnl"  ">
+                        	城市招募
+                            <i class="vertical-line"></i>
+                        </a>
+                    </li>
+                    <li id="li7" class="toggleli">
+                    	<a class="togglea" href="">
+                        	更多
+                            <i class="icon-tri"></i>
+                        </a>
+                        <div class="togglemenu">
+                        	<ul>
+                            	<li><a href="http://i.meituan.com/mobile/down/meituan?mtt=1.help%2Ffaq.0.0.ix1fxtnl"  ">手机版</a></li>
+                                <li><a href="http://www.meituan.com/account/subscription?mtt=1.help%2Ffaq.0.0.ix1fxtnl"  ">邮件订阅</a></li>
+                                <li><a href="http://www.meituan.com/account/referrals?mtt=1.account%2Fsubscription.0.0.ix1fyvl7"  ">邀请好友</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+<!--导航栏结束->
+
+
+<!-logo开始-->	
+    <div class="logo sec980 mb10">
+        <div class="logobox fl">
+        	<a href="http://bj.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix1fzme3"  "><div class="logoimg fl"></div></a>
+            <div class="fl">
+            	<h3><a href="http://bj.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix1g86vt"  ">北京</a></h3>
+                <span><a href="http://www.meituan.com/index/changecity/initiative?mtt=1.index%2Ffloornew.0.0.ix1g88mk"  ">切换城市</a></span>
+            </div>
+        </div>  
+        <div class="searchbox fl">
+        	<form action="">
+                <div class="fl searchbox-menu">
+                        <a href="">团购
+                            <i></i>
+                        </a>
+                        <div class="searchbox-a">
+                           <a href=""> 商家</a>
+                        </div>
+                </div>
+            	<input class="fl" type="text"/>
+                <button><a href="http://bj.meituan.com/?mtt=1.s%2Fdefault.0.0.ix3g1n8l"  ">搜索</a></button>
+            </form>
+            <ul>
+            	<li><a href="http://bj.meituan.com/s/?w=虾吃虾涮&mtt=1.s%2Fdefault.st.1.ix3fw5kj"  ">虾吃虾涮</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=黄记煌&mtt=1.s%2Fdefault.st.7.ix3g08xd"  ">黄记煌</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=正一味&mtt=1.s%2Fdefault.st.9.ix3fzsr4"  ">正一味</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=蛋糕&mtt=1.s%2Fdefault.st.8.ix3fzi8b"  ">蛋糕</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=大鸭梨&mtt=1.s%2Fdefault.st.2.ix3fxz5l"  ">大鸭梨</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=烤肉&mtt=1.s%2Fdefault.st.3.ix3fy0o2"  ">烤肉</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=东来顺&mtt=1.s%2Fdefault.st.5.ix3fyssf"  ">东来顺</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=好伦哥&mtt=1.s%2Fdefault.st.6.ix3fyxy8"  ">好伦哥</a></li>
+                <li><a href="http://bj.meituan.com/s/?w=新辣道&mtt=1.s%2Fdefault.st.4.ix3fz8fv"  ">新辣道</a></li>
+            </ul>
+        </div>
+        <div class="promise fr">
+        	<div class="promise-img-box1">
+        		<a href=""><img src="images/icon-return-big.png"   " alt="" /><span>随时退</span></a>
+            </div>
+            <div class="promise-img-box2">
+            	<a href=""><img src="images/icon-free-big.png"   " alt="" /><span>不满意免单</span></a>
+            </div>
+            <div class="promise-img-box3">
+            	<a href=""><img src="images/icon-expire-big.png"   " alt="" /><span>过期退</span></a>
+            </div>
+        </div>
+    </div>
+<!---logo结束-->
+    
+
+<!---全部分类开始-->
+    <div class="navbox sec980">
+        <div class="fl catbox" id="catebox">
+                <h2>
+                    <a href="">全部分类</a>
+                </h2>
+                <i></i>
+                <ul class="categroy" id="cateitemlist">
+                    <li class="cateitem">
+                        <div class="level1">
+                            <a class="fl fs-14 " href="http://bj.meituan.com/category/meishi?mtt=1.index%2Ffloornew.nc.1.ix4sjulr" ">美食</a>
+                            <b class="arrow-right fr"></b>
+                            <span class="fr mr10">
+                                <a href="http://bj.meituan.com/category/zizhucan?mtt=1.index%2Ffloornew.nc.2.ix4sqpx6" ">自助餐</a>
+                                <a href="http://bj.meituan.com/category/daijinquan_meishi?mtt=1.index%2Ffloornew.nc.3.ix4sr1lw" ">代金券</a>  
+                            </span>
+                        </div>
+                        <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/meishi?mtt=1.index%2Ffloornew.nc.4.ix4srfee" ">美食</a></dt>
+                                <dd><a href="http://bj.meituan.com/category/daijinquan_meishi?mtt=1.index%2Ffloornew.nc.5.ix4srrgs" ">代金券</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dangaotiandian?mtt=1.index%2Ffloornew.nc.6.ix4st9u0" ">甜点饮品</a></dd>
+                                <dd><a class="c-orange" href="http://bj.meituan.com/category/huoguo?mtt=1.index%2Ffloornew.nc.7.ix4stlqo" ">火锅</a></dd>
+                                <dd><a class="c-orange" href="http://bj.meituan.com/category/zizhucan?mtt=1.index%2Ffloornew.nc.8.ix4stxf0" ">自助餐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/kuaican?mtt=1.index%2Ffloornew.nc.9.ix4su8s4" ">小吃快餐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/ribenliaoli?mtt=1.index%2Ffloornew.nc.10.ix4suir9" ">日韩料理</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xican?mtt=1.index%2Ffloornew.nc.11.ix4sus07" ">西餐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jucanyanqing?mtt=1.index%2Ffloornew.nc.12.ix4sv3cw" ">聚餐宴请</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/kaorou?mtt=1.index%2Ffloornew.nc.13.ix4svfc9" ">烧烤烤肉</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dongbeicai?mtt=1.index%2Ffloornew.nc.14.ix4svpxz" ">东北菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/chuancai?mtt=1.index%2Ffloornew.nc.15.ix4sw3l2" ">川湘菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jiangzhecai?mtt=1.index%2Ffloornew.nc.16.ix4swhe6" ">江浙菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xiangguokaoyu?mtt=1.index%2Ffloornew.nc.17.ix4swu6u" ">香锅烤鱼</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yuegangcai?mtt=1.index%2Ffloornew.nc.18.ix4sx5mw" ">粤港菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/shaokaokaochuan?mtt=1.index%2Ffloornew.nc.19.ix4sxmkj" ">中式烧烤/烤串</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xibeicai?mtt=1.index%2Ffloornew.nc.20.ix4sxy33" ">西北菜</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href=""></a></dt>
+                                <dd><a href="http://bj.meituan.com/category/kafeijiuba?mtt=1.index%2Ffloornew.nc.21.ix4sybim" ">咖啡酒吧茶馆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yunguicai?mtt=1.index%2Ffloornew.nc.22.ix4sytt4" ">云贵菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dongnanya?mtt=1.index%2Ffloornew.nc.23.ix4sz92v" ">东南亚菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/haixian?mtt=1.index%2Ffloornew.nc.24.ix4szrs1" ">海鲜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/sushi?mtt=1.index%2Ffloornew.nc.25.ix4t0891" ">素食</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/taiwancai?mtt=1.index%2Ffloornew.nc.26.ix4t0qqu" ">台湾/客家菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/chuangyicai?mtt=1.index%2Ffloornew.nc.27.ix4t14jj" ">创意菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhoutangduncai?mtt=1.index%2Ffloornew.nc.28.ix4t1h46" ">汤/粥/炖菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/mengcan?mtt=1.index%2Ffloornew.nc.29.ix4t1wzt" ">蒙餐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xinjiangcai?mtt=1.index%2Ffloornew.nc.30.ix4t2ag9" ">新疆菜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qitameishi?mtt=1.index%2Ffloornew.nc.31.ix4t2q9p" ">其他美食</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/lucaibeijingcai?mtt=1.index%2Ffloornew.nc.32.ix4t34ys" ">京菜鲁菜</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cateitem ">
+                        <div class="level1">
+                                <a class="fl fs-14" href="http://hotel.meituan.com/beijing?mtt=1.index%2Ffloornew.nc.33.ix4t3kov" ">酒店/客栈</a>
+                                 <b class="arrow-right fr"></b>
+                                <span class="fr mr10">
+                                    <a href="http://hotel.meituan.com/beijing/c-jingjijiudian?mtt=1.index%2Ffloornew.nc.35.ix4t4qqy" ">经济型酒店</a>
+                                </span> 
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://hotel.meituan.com/beijing?mtt=1.index%2Ffloornew.nc.36.ix4t5740" ">酒店</a></dt>
+                                <dd><a class="c-orange" href="http://hotel.meituan.com/beijing/c-jingjijiudian?mtt=1.index%2Ffloornew.nc.37.ix4t5mrb" ">经济型酒店</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-haohuajiudian?mtt=1.index%2Ffloornew.nc.38.ix4t62h6" ">豪华酒店</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-zhutijiudian?mtt=1.index%2Ffloornew.nc.39.ix4t6fm1" ">主题酒店</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-dujiajiudiandujiacun?mtt=1.index%2Ffloornew.nc.40.ix4t6rlr" ">度假酒店/度假村</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-gongyuxingjiudian?mtt=1.index%2Ffloornew.nc.41.ix4t72x4" ">公寓型酒店</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-kezhan" ">客栈</a></dd>
+                                <dd><a href="http://hotel.meituan.com/beijing/c-qingnianlvshe?mtt=1.index%2Ffloornew.nc.43.ix4t7pd6" ">青年旅社</a></dd>
+                            </dl>
+                        </div>              
+                    </li>
+                    <li class="cateitem ">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://www.meituan.com/dianying/cinemalist/all/all/seat?mtt=1.index%2Ffloornew.nc.45.ix5n6lee" ">电影/在线选座</a>
+                             <b class="arrow-right fr"></b>
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/dianying/?mtt=1.index%2Ffloornew.nc.46.ix5n685p" ">当前热映</a></dt>
+                                <dd><a href="http://bj.meituan.com/dianying/246388?mtt=1.index%2Ffloornew.nc.47.ix5n726z" ">摆渡人</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/248916?mtt=1.index%2Ffloornew.nc.48.ix5n7cpu" ">铁道飞虎</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/246267?mtt=1.index%2Ffloornew.nc.49.ix5n7qm7" ">长城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/338349?mtt=1.index%2Ffloornew.nc.50.ix5n81s6" ">血战钢锯岭</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/246261?mtt=1.index%2Ffloornew.nc.51.ix5n8ck2" ">罗曼蒂克消亡史</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/246222?mtt=1.index%2Ffloornew.nc.54.ix5n8lyo" ">海洋奇缘</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/344881?mtt=1.index%2Ffloornew.nc.52.ix5n92ef" ">你的名字</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/531857?mtt=1.index%2Ffloornew.nc.53.ix5n9i7i" ">绝对控制</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/342616?mtt=1.index%2Ffloornew.nc.55.ix5n9tpq" ">掠夺者</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/342616?mtt=1.index%2Ffloornew.nc.55.ix5na440" ">掠夺者</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="">热门影院</a></dt>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/102642?mtt=1.index%2Ffloornew.nc.57-HotCinema_0.ix5nas4z" ">万达影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/133085?mtt=1.index%2Ffloornew.nc.58-HotCinema_1.ix5nas4z" ">东都影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/27617?mtt=1.index%2Ffloornew.nc.59-HotCinema_2.ix5nas4z" ">美嘉欢乐影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/25181?mtt=1.index%2Ffloornew.nc.60-HotCinema_3.ix5nas4z" ">东环影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/23854?mtt=1.index%2Ffloornew.nc.61-HotCinema_4.ix5nas4z" ">17.5影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/125212?mtt=1.index%2Ffloornew.nc.62-HotCinema_5.ix5nas4z" ">东宫影剧院</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/28916?mtt=1.index%2Ffloornew.nc.63-HotCinema_6.ix5nas4z" ">搜秀影城</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/275830?mtt=1.index%2Ffloornew.nc.64-HotCinema_7.ix5nas4z" ">华谊兄弟影院</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/252281?mtt=1.index%2Ffloornew.nc.65-HotCinema_8.ix5nas4z" ">劲松电影院</a></dd>
+                                <dd><a href="http://bj.meituan.com/dianying/cinemalist/all/302869?mtt=1.index%2Ffloornew.nc.66-HotCinema_9.ix5nas4z" ">古城电影院</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cateitem">
+                            <div class="level1">
+                            <a class="fl fs-14" href="http://bj.meituan.com/category/pc_ktv?mtt=1.index%2Ffloornew.nc.67.ix5nf1xs" ">KTV</a>
+                             <b class="arrow-right fr"></b>
+                    </li>
+                    <li class="cateitem">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://bj.meituan.com/category/xiuxianyule?mtt=1.index%2Ffloornew.nc.68.ix5nas4z" ">休闲娱乐</a>
+                             <b class="arrow-right fr"></b>
+                            <span class="fr mr10">
+                            <a href="http://bj.meituan.com/category/zuliaoxiuxian?mtt=1.index%2Ffloornew.nc.69.ix5nfccx" ">足疗按摩</a>
+                            <a href="http://bj.meituan.com/category/wenquan?mtt=1.index%2Ffloornew.nc.70.ix5ngfbx" ">温泉</a>
+                            </span>  
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/xiuxianyule?mtt=1.index%2Ffloornew.nc.71.ix5pjobw" ">休闲娱乐</a></dt>
+                                <dd><a class="c-orange" href="http://bj.meituan.com/category/pc_ktv?mtt=1.index%2Ffloornew.nc.72.ix5pk75l" ">KTV</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qitaxiuxian?mtt=1.index%2Ffloornew.nc.73.ix5pkiwj" ">其他娱乐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yanchu?mtt=1.index%2Ffloornew.nc.74.ix5pkw87" ">演出赛事</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dianwan/youxiting?mtt=1.index%2Ffloornew.nc.75.ix5pl7br" ">电玩/游戏厅</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jianshen?mtt=1.index%2Ffloornew.nc.76.ix5plikw" ">运动健身</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/sirenyingyuan?mtt=1.index%2Ffloornew.nc.77.ix5plthc" ">私人影院</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zuliaoxiuxian?mtt=1.index%2Ffloornew.nc.78.ix5pm6lh" ">足疗按摩</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xiyuhanzheng?mtt=1.index%2Ffloornew.nc.79.ix5pmiwk" ">洗浴/汗蒸</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhongyiyangsheng?mtt=1.index%2Ffloornew.nc.80.ix5pn2h3" ">中医养生</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/chaguan?mtt=1.index%2Ffloornew.nc.81.ix5pnvsq" ">茶馆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qipai?mtt=1.index%2Ffloornew.nc.82.ix5po80m" ">棋牌</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/桌游?mtt=1.index%2Ffloornew.nc.83.ix5pokml" ">桌游</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/hongpa?mtt=1.index%2Ffloornew.nc.84.ix5pp6zr" ">轰趴</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/wenquan?mtt=1.index%2Ffloornew.nc.85.ix5poufy" ">温泉</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/diy?mtt=1.index%2Ffloornew.nc.86.ix5ppgy1" ">DIY手工</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/caizhai/nongjiale?mtt=1.index%2Ffloornew.nc.87.ix5ppze2" ">采摘/农家乐</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href=""></a></dt>
+                                <dd><a href="http://bj.meituan.com/category/mishitaotuo?mtt=1.index%2Ffloornew.nc.88.ix5pqcgp" ">密室逃脱</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jiuba?mtt=1.index%2Ffloornew.nc.89.ix5pqqnn" ">酒吧</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhenrencs?mtt=1.index%2Ffloornew.nc.90.ix5pr3hn" ">真人CS</a></dd>
+                            </dl>
+                        </div>              
+                    </li>
+                    <li class="cateitem">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://trip.meituan.com/dujia/jingdianmenpiao" ">周边游/旅游</a>
+                             <b class="arrow-right fr"></b>
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/mobile_poi_zhoubianyou?mtt=1.index%2Ffloornew.nc.93.ix5psc6x" ">周边游</a></dt>
+                                <dd><a href="http://bj.meituan.com/category/youle?mtt=1.index%2Ffloornew.nc.94.ix5psr7s" ">景点</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/wenquan?mtt=1.index%2Ffloornew.nc.95.ix5pt5ia" ">温泉</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhutigongyuan?mtt=1.index%2Ffloornew.nc.96.ix5q3c7f" ">主题公园</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhanlanguan?mtt=1.index%2Ffloornew.nc.97.ix5q6jtp" ">展览馆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/nongjiale?mtt=1.index%2Ffloornew.nc.98.ix5q6zvh" ">农家乐</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/shuishangleyuan?mtt=1.index%2Ffloornew.nc.99.ix5q7euy" ">水上乐园</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dongzhiwuyuan?mtt=1.index%2Ffloornew.nc.100.ix5q8voi" ">动植物园</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/haiyangguan?mtt=1.index%2Ffloornew.nc.101.ix5q7q4p" ">海洋馆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/youchuan?mtt=1.index%2Ffloornew.nc.102.ix5q9dvd" ">游船</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/gaokongguanjing?mtt=1.index%2Ffloornew.nc.103.ix5q9t42" ">高空观景</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhenrencs?mtt=1.index%2Ffloornew.nc.104.ix5qa76j" ">真人CS</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/danchechuzu?mtt=1.index%2Ffloornew.nc.105.ix5qaix4" ">单车出租</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/piaoliu?mtt=1.index%2Ffloornew.nc.106.ix5qavm2" ">漂流</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qitayouwan?mtt=1.index%2Ffloornew.nc.107.ix5qb5w8" ">其他游戏</a></dd>
+                            </dl>
+                        </div>      
+                    </li>
+                    <li class="cateitem">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://bj.meituan.com/category/shenghuo?mtt=1.index%2Ffloornew.nc.108.ix5qbuwm" ">生活服务</a>
+                             <b class="arrow-right fr"></b>
+                            <span class="fr mr10">
+                            <a href="http://bj.meituan.com/category/hunshaphoto?mtt=1.index%2Ffloornew.nc.109.ix5qc67h" ">婚纱摄影</a>
+                            <a href="http://bj.meituan.com/category/gexingxiezhen?mtt=1.index%2Ffloornew.nc.110.ix5qdf28" ">个性写真</a>
+                            </span>
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/shenghuo?mtt=1.index%2Ffloornew.nc.111.ix5qe8gt" ">生活服务</a></dt>
+                                <dd><a href="http://bj.meituan.com/category/hunshaphoto?mtt=1.index%2Ffloornew.nc.112.ix5qeosw" ">婚纱摄影</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/gexingxiezhen?mtt=1.index%2Ffloornew.nc.113.ix5qf6ta" ">个性写真</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/ertongsheying?mtt=1.index%2Ffloornew.nc.114.ix5qfin1" ">亲子摄影</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/sheying?mtt=1.index%2Ffloornew.nc.115.ix5qfxr1" ">其他摄影</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/peixun?mtt=1.index%2Ffloornew.nc.116.ix5qgds0" ">培训课程</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qitashenghuo?mtt=1.index%2Ffloornew.nc.117.ix5qgusf" ">其他生活</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/aiche?mtt=1.index%2Ffloornew.nc.118.ix5qh74l" ">汽车服务</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/tijian?mtt=1.index%2Ffloornew.nc.119.ix5qhift" ">体检/齿科</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yiwupijuxihu?mtt=1.index%2Ffloornew.nc.120.ix5qi8ch" ">衣物/皮具洗护</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xianhua?mtt=1.index%2Ffloornew.nc.121.ix5qilah" ">鲜花</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/muyingqinzi?mtt=1.index%2Ffloornew.nc.122.ix5qmw42" ">母婴亲子</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/peijing?mtt=1.index%2Ffloornew.nc.123.ix5qn8vp" ">配镜</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/zhaopianchongyin?mtt=1.index%2Ffloornew.nc.124.ix5qniy5" ">照片冲印</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/gouwuka?mtt=1.index%2Ffloornew.nc.125.ix5qnth3" ">商场购物卡</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/fushixiebao?mtt=1.index%2Ffloornew.nc.126.ix5qobwg" ">服饰鞋包</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/dianqishuma?mtt=1.index%2Ffloornew.nc.127.ix5qom4l" ">电器数码</a></dd>
+                            </dl>
+                        </div>                  
+                    </li>
+                    <li class="cateitem">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://bj.meituan.com/category/wanggou?mtt=1.index%2Ffloornew.nc.128.ix5qoy3k" ">购物</a>
+                             <b class="arrow-right fr"></b>
+                            <span class="fr mr10">
+                            <a href="http://bj.meituan.com/category/nanzhuang" ">男装</a>
+                            <a href="http://bj.meituan.com/category/nvzhuang?mtt=1.index%2Ffloornew.nc.130.ix5qq0zp" ">女装</a>
+                            </span>  
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/wanggou?mtt=1.index%2Ffloornew.nc.131.ix5qqba2" ">购物</a></dt>
+                                <dd><a href="http://bj.meituan.com/category/nvzhuang?mtt=1.index%2Ffloornew.nc.132.ix5qqmxq" ">女装</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/nanzhuang?mtt=1.index%2Ffloornew.nc.133.ix5qqzdv" ">男装</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/neiyi?mtt=1.index%2Ffloornew.nc.134.ix5qrcr0" ">内衣</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/xiexue?mtt=1.index%2Ffloornew.nc.135.ix5qrnsi" ">鞋靴</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/shipinyinliao?mtt=1.index%2Ffloornew.nc.136.ix5qrz2d" ">食品</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/baihuo?mtt=1.index%2Ffloornew.nc.137.ix5qs97e" ">家具日用</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/meizhuang?mtt=1.index%2Ffloornew.nc.138.ix5qsiee" ">美妆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yundonghuwai?mtt=1.index%2Ffloornew.nc.139.ix5qstpj" ">运动户外</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/peishishoubiao?mtt=1.index%2Ffloornew.nc.140.ix5qt4ee" ">配饰手表</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/muyingwanju?mtt=1.index%2Ffloornew.nc.141.ix5qu14l" ">母婴玩具</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jiafang?mtt=1.index%2Ffloornew.nc.142.ix5qufm3" ">家纺</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/shumadianqi?mtt=1.index%2Ffloornew.nc.143.ix5qvb1t" ">数码电器</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/jiajujiazhuang?mtt=1.index%2Ffloornew.nc.144.ix5quse5" ">家具家装</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qicheyongpin?mtt=1.index%2Ffloornew.nc.145.ix5qvvgw" ">汽车用品</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/bendigouwu?mtt=1.index%2Ffloornew.nc.146.ix5qwpx4" ">本地购物</a></dd>
+                            </dl>
+                        </div>              
+                    </li>
+                    <li class="cateitem ">
+                        <div class="level1">
+                            <a class="fl fs-14" href="http://bj.meituan.com/category/jiankangliren?mtt=1.index%2Ffloornew.nc.147.ix5qx2w2" ">丽人</a>
+                             <b class="arrow-right fr"></b>
+                            <span class="fr mr10">
+                            <a href="http://bj.meituan.com/category/meifa?mtt=1.index%2Ffloornew.nc.148.ix5qxr9z" ">美发</a>
+                            <a href="http://bj.meituan.com/category/meijiameijie?mtt=1.index%2Ffloornew.nc.149.ix5qy15h" ">美甲美瞳</a>
+                            </span> 
+                            <div class="level2">
+                            <dl>
+                                <dt><a href="http://bj.meituan.com/category/jiankangliren?mtt=1.index%2Ffloornew.nc.150.ix5qyaql" ">丽人</a></dt>
+                                <dd><a href="http://bj.meituan.com/category/meifa?mtt=1.index%2Ffloornew.nc.151.ix5qyr4j" ">美发</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/meirongmeiti?mtt=1.index%2Ffloornew.nc.152.ix5qz563" ">美容美体</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/meijiameijie?mtt=1.index%2Ffloornew.nc.153.ix5qznlw" ">美甲美瞳</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/yujiawudao?mtt=1.index%2Ffloornew.nc.154.ix5r0fop" ">瑜伽舞蹈</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/shoushenxianti?mtt=1.index%2Ffloornew.nc.155.ix5r0vps" ">瘦身纤体</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/hanshidingzhuang?mtt=1.index%2Ffloornew.nc.156.ix5r16zo" ">韩式定妆</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/qudou?mtt=1.index%2Ffloornew.nc.157.ix5r1l77" ">祛痘</a></dd>
+                                <dd><a href="http://bj.meituan.com/category/wenshen?mtt=1.index%2Ffloornew.nc.158.ix5r1x00" ">纹身</a></dd>
+                            </dl>
+                        </div>              
+                    </li> 
+                </ul>
+        </div>
+            
+        <ul class="nav-right fl">
+                <li><a class="fs-16 nav-right1" href="http://bj.meituan.com/?mtt=1.hots%2Fdefault.lz.1-28222.ix4sk1l2">首页</a></li>
+                <li><a class="fs-16 nav-right1" href="http://bj.meituan.com/category/new?mtt=1.index%2Ffloornew.lz.2-6947.ix4si6u2">今日新单</a></li>
+                <li><a class="fs-16 nav-right1 " href="http://bj.meituan.com/category/meishi?mtt=1.index%2Ffloornew.lz.3-38022.j11jmfuo">美食</a></li>
+                <li><a class="fs-16 nav-right1" href="http://waimai.meituan.com/?utm_source=3001&utm_medium=shenbian&utm_campaign=normal&city=1&mtt=1.index%2Fdefault%2Ffilter.lz.4-19868.ix4sj6zu">身边外卖</a></li>
+        </ul>   
+    </div>	
+<!---全部分类结束-->
+
+
+
+<!---详情页主体部分开始-->
+    <div class="item sec980">
+        <div class="item-title">
+            <ul>
+                <li class="cur"><a href="http://bj.meituan.com/?mtt=1.deal%2Fdefault.0.0.j202tkuk">北京团购</a></li>
+                <li><a href="http://bj.meituan.com/category/meishi?mtt=1.deal%2Fdefault.0.0.j202tsz7">美食团购</a>>></li>
+                <li><a href="http://bj.meituan.com/category/zizhucan?mtt=1.deal%2Fdefault.0.0.j202uu1k">自助餐</a>>></li>
+                <li>鼎极轩海鲜烤肉自助</li>
+            </ul>
+        </div>
+        <h1>【2店通用】鼎极轩海鲜烤肉自助</h1>
+        <p>仅售69.6元！价值89元的鼎极轩星座团购，提供免费WiFi。</p>
+        <div class="item-img">
+            <img src="images/item-img.png" alt="">
+            <i class="icon-item1" title="多套餐"></i>
+            <i class="icon-item2" title="免预约"></i> 
+            <a href="">
+                <img src="images/item-img.png" alt="">
+            </a>
+        </div>
+        <div class="item-menu">
+            <div class="item-bulk">
+                <span class="c-lgray fs10">团购价</span>
+                <span class="c-orange ml16">¥<b class="fs-28"> 69.6</b></span>
+                <span class="c-lgray fs12 ml10">门店价<s class="ml5">¥89</s></span>
+            </div>
+            <div class="item-sale">
+                <ul>
+                    <li>已售<i class="c-orange">2771</i>
+                        <i class="vertical-line"></i>
+                    </li>
+
+                    <li>
+                        <a href="http://bj.meituan.com/deal/33558643.html?mtt=1.index%2Ffloornew.im.13.j1zrnysf#anchor-reviews"><i class="c-orange">4.2</i>分</a>
+                        <i class="vertical-line"></i>
+                    </li>
+                    <li><a href="http://bj.meituan.com/deal/33558643.html?mtt=1.index%2Ffloornew.im.13.j1zrnysf#anchor-reviews"><i class="c-orange">300</i>人评价</a></li>
+                </ul>
+            </div>
+            <div class="item-effective">
+                <span class="fs10 c-lgray mr16">有效期</span>
+                <span class="fs10 c-gray mr16">截止到2017.05.15 <span class="c-orange"> 周末、法定节假日通用</span> </span>
+            </div>
+            <div class="item-package">
+                <span class="item-package-span">套餐</span>
+                <ul class="item-package-ul">
+                    <li><a href="http://bj.meituan.com/deal/32719884.html?mtt=1.deal%2Fdefault.dx.1.j202va53">午晚餐79.9元</a></li>
+                    <li><a href="http://bj.meituan.com/deal/32719877.html?mtt=1.deal%2Fdefault.dx.2.j202wxws">午晚餐69.9元</a></li>
+                    <li><a href="http://bj.meituan.com/deal/40159192.html?mtt=1.deal%2Fdefault.dx.3.j202x9rp">午晚餐159.8元</a></li>
+                    <li><a href="http://bj.meituan.com/deal/33558643.html?mtt=1.deal%2Fdefault.dx.4.j202xkkn" class="cur">午晚餐69.6元</a></li>
+                    <li><a href="http://bj.meituan.com/deal/40159240.html?mtt=1.deal%2Fdefault.dx.5.j202xyw5">午晚餐319.6元</a></li>
+                </ul>
+            </div>
+            <div class="item-number">
+                <b>数量</b>
+                <div class="item-number-increase">
+                    <a href="" class="fl">－</a>
+                    <span>1</span>
+                    <a href="" class="fr">+</a>
+                </div>
+            </div>
+            <div class="item-purchase">
+                <div class="item-purchase-box">
+                    <a href="http://bj.meituan.com/deal/buy/40159240?q=1&dealgoodsid=0&mtt=1.deal%2Fdefault.0.0.j202y09v"></a>
+                </div>
+                <div href="" class="item-purchase-collect">
+                    <a href="">
+                        <img src="images/collect-ico.png" alt="">
+                        <b class="fs12 c-lgray">收藏<i class="c-gray"> (847)</i></b>
+                    </a>
+                </div>
+                <div href="" class="item-purchase-share">
+                    <a href="">
+                        <img src="images/share-ico.png" alt="">
+                        <span class="fs12">分享到</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item-promise">
+                <span>服务承诺</span>
+                <div class="item-promise-ul">
+                    <ul>
+                        <li><a href="http://www.meituan.com/commitment/?mtt=1.deal%2Fdefault.da.1.j203071q#anytime" title="未消费，随时退款"><img src="images/promise-min1.png" alt="">随时退</a></li>
+                        <li><a href="http://www.meituan.com/commitment/?mtt=1.deal%2Fdefault.da.2.j203071q#expire" title="过期未消费，无条件退款"><img src="images/promise-min2.png" alt="">过期退</a></li>
+                        <li><a href="http://www.meituan.com/commitment/?mtt=1.deal%2Fdefault.da.3.j203071q#topspeed" title="无需等待，退款立即到账"><img src="images/promise-min3.png" alt="">急速退</a></li>
+                        <li title="真实消费后的用户评价"><img src="images/promise-min4.png" alt="">真实评价</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---详情页主体部分结束-->
+
+
+
+<!---详情页展开部分开始-->
+    <div class="detail sec980">
+        <div class="detail-left">
+            <div class="detail-notice">
+                <img src="images/detail-notice.png" alt="">
+                <span>亲爱的用户，本次团购有效期延长至2017年05月15日，感谢您的支持，祝消费愉快~</span>
+            </div>
+            <div class="detail-other">
+                <div class="detail-right-box">
+                    <h2 class="fl fs-18">该商家的其他团购</h2>
+                    <div class="fr detail-right-list">
+                        <span>团购价</span>
+                        <em>门店家</em>
+                        <i>已售</i>
+                    </div>
+                </div>
+                <a href="http://bj.meituan.com/deal/32719884.html?mtt=1.deal%2Fdefault.do.1.j203795r" class="detail-right-a fl">
+                    <h2 class="fl fs12">【2店通用】 单人烤肉自助，提供免费WiFi</h2>
+                    <div class="fr detail-right-menu">
+                        <span>¥79.9</span>
+                        <em>¥89</em>
+                        <i>159714</i>
+                    </div>
+                </a>
+                <a href="http://bj.meituan.com/deal/32719877.html?mtt=1.deal%2Fdefault.do.2.j203795r" class="detail-right-a fl">
+                    <h2 class="fl fs12">【2店通用】 闲时单人烤肉自助，提供免费WiFi</h2>
+                    <div class="fr detail-right-menu">
+                        <span>¥69.9</span>
+                        <em>¥89</em>
+                        <i>19153</i>
+                    </div>
+                </a>
+                <a href="http://bj.meituan.com/deal/40159192.html?mtt=1.deal%2Fdefault.do.3.j203795r" class="detail-right-a fl">
+                    <h2 class="fl fs12">【2店通用】 双人烤肉自助，提供免费WiFi</h2>
+                    <div class="fr detail-right-menu">
+                        <span>¥159.8</span>
+                        <em>¥178</em>
+                        <i>10191</i>
+                    </div>
+                </a>
+                <a href="http://bj.meituan.com/deal/33558643.html?mtt=1.deal%2Fdefault.do.4.j203795r" class="detail-right-a fl">
+                    <h2 class="fl fs12">【2店通用】 四人烤肉自助，提供免费WiFi</h2>
+                    <div class="fr detail-right-menu">
+                        <span>¥319.6</span>
+                        <em>¥356</em>
+                        <i>2277</i>
+                    </div>
+                </a>
+            </div>
+            <div class="detail-navbar">
+                <ul>
+                    <li><a href="" class="cur">商家位置</a></li>
+                    <li><a href="">购买须知</a></li>
+                    <li><a href="">本单详情</a></li>
+                    <li><a href="">商家介绍</a></li>
+                    <li><a href="">消费评价（300）</a></li>
+                </ul>
+            </div>
+            <div class="detail-location">
+                <span>商家位置</span>
+                <div class="detail-location-left fl">
+                    <a href="">
+                       <img src="images/business location.png" alt="">
+                    </a>
+                    <a href="" title="点击查看完整地图">
+                        <b>查看完整地图 </b>
+                    </a>
+                </div>
+                <div class="detail-location-right fr">
+                    <div class="detail-location-font">
+                        <a href="http://bj.meituan.com/shop/41031617?mtt=1.deal%2Fdefault.0.0.j203795r" title="鼎极轩海鲜烤肉自助（四道口店）">
+                            鼎极轩海鲜烤肉自助（四道口店）
+                        </a>
+                    </div>
+                    <p class="c-gray fs12" title="鼎极轩海鲜烤肉自助（四道口店）">地址：海淀区四道口路2号乐天玛特二层</p>
+                    <div class="detail-location-map">
+                        <a href="">
+                            查看地图
+                         </a>
+                         <a href="">
+                            公交/驾车去这里
+                        </a>
+                    </div>
+                    <p class="c-gray fs12" >地铁：距大钟寺站约698米</p>
+                    <p class="c-gray fs12 mt7" >电话：010-53567011</p>
+                    <div class="detail-location-size">
+                        鼎极轩海鲜烤肉自助（小营店）
+                    </div>
+                </div>
+            </div>
+            <div class="detail-instructions">
+                <h2>购买须知</h2>
+                <dl>
+                    <dt>有效期</dt>
+                    <dd>2015.12.22 至 2017.5.15（周末、法定节假日通用）</dd>
+                    <dt>预约提醒</dt>
+                    <dd>无需预约，消费高峰时可能需要等位</dd>
+                    <dt>限购限用提醒</dt>
+                    <dd>每张美团券最多1位成人使用，身高1.4米以上儿童计入人数</dd>
+                    <dt class="cur">温馨提示</dt>
+                    <dd><p>老人59元/位（65岁以上）</p>
+                        <p>学生69元 /位</p>
+                        <p>过生日49元/位</p>
+                        <p>儿童49元/位（1米-1.4米），1米以下免费</p>
+                        <p>生日在本月星座内可使用本团购，验证时需出示身份证，仅限本人使用</p>
+                        <p>团购用户不可同时享受商家其他优惠</p>
+                        <p>部分菜品因时令原因有所不同，请以店内当日实际供应为准</p>
+                    </dd>
+                    <dt>有效期</dt>
+                    <dd>2015.12.22 至 2017.5.15（周末、法定节假日通用）</dd>
+                </dl>
+            </div>
+            <div class="detail-single">
+                <h2>本单详情</h2>
+                <h3>美味共享</h3>
+                <div class="detail-share">
+                    <ul>
+                        <li><img src="images/detail-share1.png" alt=""></li>
+                        <li><img src="images/detail-share2.png" alt=""></li>
+                        <li><img src="images/detail-share3.png" alt=""></li>
+                        <li><img src="images/detail-share4.png" alt=""></li>
+                        <li><img src="images/detail-share5.png" alt=""></li>
+                        <li><img src="images/detail-share6.png" alt=""></li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/detail-share7.png" alt=""></li>
+                        <li><img src="images/detail-share8.png" alt=""></li>
+                        <li><img src="images/detail-share9.png" alt=""></li>
+                        <li><img src="images/detail-share10.png" alt=""></li>
+                        <li><img src="images/detail-share11.png" alt=""></li>
+                        <li><img src="images/detail-share12.png" alt=""></li>
+                        <li><img src="images/detail-share13.png" alt=""></li>
+                        <li><img src="images/detail-share14.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="detail-share-menu">
+                        <span>套餐内容</span>      
+                        <em>单价</em>
+                        <i>数量/规格</i>
+                        <p>小计</p>
+                </div>
+                <div class="detail-share-content">
+                        <span>鼎极轩星座团购</span>            
+                        <em>¥89</em>
+                        <i>1位</i>
+                        <p>¥89</p>
+                </div>
+                <div class="detail-share-price">
+                        <span>价值: ¥89</span>            
+                        <em class="ml14"> 美团价:</em>
+                        <i class="fs-14 c-orange">¥69.6</i>
+                </div>
+                <div class="detail-share-time">
+                    <ul>
+                        <li><img src="images/detail-share-time.png" alt="">鼎极轩星座团购：11:00-15:00,15:00-22:30</li>
+                        <li><img src="images/detail-share-time.png" alt="">最多可用餐2小时</li>
+                        <li><img src="images/detail-share-time.png" alt="">午餐/晚餐2选1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail-recommend">
+                <h3>美团推荐</h3> 
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">凉菜类</span>
+                    <i class="fs14 c-gray ">：麻辣鸭头、清香丝瓜尖、烧焦皮蛋、辣味金针菇、什锦捞拌、茄子汁辣带鱼等40多</i>
+                    <img src="images/detail-recommend1.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">海鲜类</span>
+                    <i class="fs14 c-gray ">：烤生蚝、扇贝、带子、红贝、大虾、笔管鱼、多春鱼、平鱼、带鱼、黄花鱼、海螺肉等40多种</i>
+                    <img src="images/detail-recommend2.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">烤肉类</span>
+                    <i class="fs14 c-gray ">：韩式烤肉、鼎极肥牛、精品肥牛、蒜香肥牛、烤乳猪、果木烤鸭、巴西烤肉、土耳其烤肉、烤牛舌、烤牛宝、牛板筋等50种</i>
+                    <img src="images/detail-recommend3.png" alt="">
+                </div>
+                <div class="detail-recommend-img2">
+                    <span class="fs-14 c-gray ">酒水饮料类</span>
+                    <i class="fs14 c-gray ">：鸡尾酒、白酒、红酒、啤酒、鲜榨果汁、可乐、雪碧等20多种饮料</i>
+                    <img src="images/detail-recommend4.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">小吃面点类</span>
+                    <i class="fs14 c-gray ">：豉汁排骨、佛跳墙、蛋挞榴莲酥、披萨、蛋糕摩斯、曲奇泡芙、果冻等30多种</i>
+                    <img src="images/detail-recommend5.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">凉菜类</span>
+                    <i class="fs14 c-gray ">：麻辣鸭头、清香丝瓜尖、烧焦皮蛋、辣味金针菇、什锦捞拌、茄子汁辣带鱼等40多种</i>
+                    <img src="images/detail-recommend6.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">海鲜类</span>
+                    <i class="fs14 c-gray ">：烤生蚝、扇贝、带子、红贝、大虾、笔管鱼、多春鱼、平鱼、带鱼、黄花鱼、海螺肉等40多种</i>
+                    <img src="images/detail-recommend7.png" alt="">
+                </div>
+                <div class="detail-recommend-img1">
+                    <span class="fs-14 c-gray ">酒水饮料类</span>
+                    <i class="fs14 c-gray ">：鸡尾酒、白酒、红酒、啤酒、鲜榨果汁、可乐、雪碧等20多种饮料</i>
+                    <img src="images/detail-recommend8.png" alt="">
+                </div>
+                <div class="detail-recommend-img3">
+                    <img src="images/detail-recommen9.png" alt="">
+                </div>
+                <div class="detail-recommend-img4">
+                    <img src="images/detail-recommen10.png" alt="">
+                    <img src="images/detail-recommen11.png" alt="">
+                    <img src="images/detail-recommen12.png" alt="">
+                    <img src="images/detail-recommen13.png" alt="">
+                </div>
+            </div>
+            <div class="detail-introduce">
+                <h2>商家介绍</h2>
+                <h3>鼎极轩海鲜烤肉自助</h3>
+                <div class="detail-introduce-img1">
+                    <img src="images/detail-introduce1.png" alt="">
+                </div>
+                <i class="fs14 c-gray ">鼎极轩海鲜烤肉自助，以时尚的装修风格兴建的一家大型餐厅，以绿色健康饮食为主，坚持以诚信经营发展为理念，餐厅坐落于北京朝阳区小营东路比邻体育中心鸟巢，水立方北四环之旁；地理位置优越，交通便利！</i>
+                <div class="detail-introduce-img2">
+                    <img src="images/detail-introduce2.png" alt="">
+                    <img src="images/detail-introduce3.png" alt="">
+                    <img src="images/detail-introduce4.png" alt="">
+                    <img src="images/detail-introduce5.png" alt="">
+                    <img src="images/detail-introduce6.png" alt="">
+                    <img src="images/detail-introduce7.png" alt="">
+                    <img src="images/detail-introduce8.png" alt="">
+                    <img src="images/detail-introduce9.png" alt="">
+                    <img src="images/detail-introduce10.png" alt="">
+                </div>
+            </div>
+            <div class="detail-evaluation">
+                <h2>消费评价</h2>
+                <div class="detail-score">
+                    <div class="detail-score-left">
+                        <span><i class="fs-32 c-orange">4.2</i>分</span>
+                        <div class="star-out">
+                            <div class="star-in"></div>
+                        </div>
+                        <p>共 <i class="c-orange fs-12">301 </i>人评价</p>
+                    </div>
+                    <div class="detail-score-right">
+                        <div class="detail-score-width">
+                            <div class="detail-score-min">
+                                <i class="fs14 c-lgray">1分</i>
+                                <span class="width-in">
+                                    <span class="width-out1">
+                                    </span>
+                                </span>
+                                <em class="fs14 c-lgray">7人</em>
+                            </div>
+                            <div class="detail-score-min">
+                                <i class="fs14 c-lgray">2分</i>
+                                <span class="width-in">
+                                    <span class="width-out1">
+                                    </span>
+                                </span>
+                                <em class="fs14 c-lgray">8人</em>
+                            </div>
+                            <div class="detail-score-min">
+                                <i class="fs14 c-lgray">3分</i>
+                                <span class="width-in">
+                                    <span class="width-out3">
+                                    </span>
+                                </span>
+                                <em class="fs14 c-lgray">45人</em>
+                            </div>
+                            <div class="detail-score-min">
+                                <i class="fs14 c-lgray">4分</i>
+                                <span class="width-in">
+                                    <span class="width-out4">
+                                    </span>
+                                </span>
+                                <em class="fs14 c-lgray">91人</em>
+                            </div>
+                            <div class="detail-score-min">
+                                <i class="fs14 c-lgray">5分</i>
+                                <span class="width-in">
+                                    <span class="width-out5">
+                                    </span>
+                                </span>
+                                <em class="fs14 c-lgray">151人</em>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="detail-comments">
+                <div class="detail-comments-left">
+                    <span>大家都在说：</span>
+                </div>
+                <div class="detail-comments-right">
+                    <ul>
+                        <li><a href="">味道赞(28)</a></li>
+                        <li><a href="">环境优雅(28)</a></li>
+                        <li><a href="">服务优雅(22)</a></li>
+                        <li><a href="">菜品丰富(21)</a></li>
+                        <li><a href="">回头客(18)</a></li>
+                        <li><a href="">干净卫生(14)</a></li>
+                        <li><a href="">价格实惠(10)</a></li>
+                        <li><a href="">性价比高(9)</a></li>
+                        <li class="cur"><a href="">烤鸭(21)</a></li>
+                        <li class="cur"><a href="">朋友聚餐(4)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail-all">
+                <div class="detail-all-title">
+                    <ul>
+                        <li><a href="" class="cur">全部</a></li>
+                        <li><a href="">晒图评价</a></li>
+                        <li><a href="">只看低分</a></li>
+                    </ul>
+                    <select>
+                        <option value="">默认排序</option>
+                        <option value="">时间排序</option>
+                    </select>
+                </div>
+                <div class="detail-box1">
+                    <div class="detail-box1-left">
+                        <img src="images/detail-box1.png" alt="">
+                        <span>JWS140255221</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box1-right">
+                        <span class="star-out1">
+                            <span class="star-in1"></span>
+                        </span>
+                        <i>2017-04-08</i>
+                        <p>无</p>
+                        <div class="detail-box1-img">
+                            <ul>
+                                <li><a href=""><img src="images/detail-box1-img1.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box1-img2.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box1-img3.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box1-img4.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box1-img5.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <em>鼎极轩海鲜烤肉自助（小营店）</em>
+                    </div>
+                </div>
+                <div class="detail-box2">
+                    <div class="detail-box2-left">
+                        <img src="images/detail-box2.png" alt="">
+                        <span>德式奶昔</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box2-right">
+                        <span class="star-out2">
+                            <span class="star-in2"></span>
+                        </span>
+                        <i>2017-02-10</i>
+                        <p>特别好吃。时间够。今天是我生日。还送了蛋糕和长寿面。真的很满意。棒棒的。上次过生日也是在这里。和朋友一起。环境很不错。下次还会来的。干净卫生……非常喜欢。还有二十一个字就有100积分了，还有八个字。好了，还有三张图........ #葡萄酒# #很多的选择，都是我的最爱# #烤培根# #吃撑了#</p>
+                        <div class="detail-box2-img">
+                            <ul>
+                                <li><a href=""><img src="images/detail-box2-img1.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box2-img2.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box2-img3.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <em>鼎极轩海鲜烤肉自助（四道口店）</em>
+                    </div>
+                </div>
+                <div class="detail-box3">
+                    <div class="detail-box3-left">
+                        <img src="images/detail-box3.png" alt="">
+                        <span>fzc215329787</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box3-right">
+                        <span class="star-out3">
+                            <span class="star-in3"></span>
+                        </span>
+                        <i>2017-03-21</i>
+                        <p>环境确实高大上，品种也是齐全，</p>
+                        <div class="detail-box3-img">
+                            <ul>
+                                <li><a href=""><img src="images/detail-box3-img1.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box3-img2.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box3-img3.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <em>鼎极轩海鲜烤肉自助（四道口店）</em>
+                    </div>
+                </div>
+                <div class="detail-box4">
+                    <div class="detail-box4-left">
+                        <img src="images/detail-box4.png" alt="">
+                        <span>香水哭泣</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box4-right">
+                        <span class="star-out4">
+                            <span class="star-in4"></span>
+                        </span>
+                        <i>2017-04-18</i>
+                        <p>环境干净卫生，菜品齐全，经济实惠</p>
+                        <em>鼎极轩海鲜烤肉自助（小营店）</em>
+                    </div>
+                </div>
+                <div class="detail-box5">
+                    <div class="detail-box5-left">
+                        <img src="images/detail-box5.png" alt="">
+                        <span>ben963260426</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box5-right">
+                        <span class="star-out5">
+                            <span class="star-in5"></span>
+                        </span>
+                        <i>2017-03-31</i>
+                        <p>环境挺好的，干净，种类也挺多的，主食不错！</p>
+                        <div class="detail-box5-img">
+                            <ul>
+                                <li><a href=""><img src="images/detail-box5-img1.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <em>鼎极轩海鲜烤肉自助（小营店）</em>
+                    </div>
+                </div>
+                <div class="detail-box6">
+                    <div class="detail-box6-left">
+                        <img src="images/detail-box6.png" alt="">
+                        <span>DlW634664123</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box6-right">
+                        <span class="star-out6">
+                            <span class="star-in6"></span>
+                        </span>
+                        <i>2017-04-15</i>
+                        <p>不错不错，环境好，菜品全，就餐环境也很好</p>
+                        <em>鼎极轩海鲜烤肉自助（四道口店）</em>
+                    </div>
+                </div>
+                <div class="detail-box7">
+                    <div class="detail-box7-left">
+                        <img src="images/detail-box7.png" alt="">
+                        <span>WsP627705250</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box7-right">
+                        <span class="star-out7">
+                            <span class="star-in7"></span>
+                        </span>
+                        <i>2017-04-14</i>
+                        <p>李娇是个好同志，打电话咨询很满意。</p>
+                        <em>鼎极轩海鲜烤肉自助（小营店）</em>
+                    </div>
+                </div>
+                <div class="detail-box8">
+                    <div class="detail-box8-left">
+                        <img src="images/detail-box8.png" alt="">
+                        <span>Rrp192208281</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box8-right">
+                        <span class="star-out8">
+                            <span class="star-in8"></span>
+                        </span>
+                        <i>2017-04-08</i>
+                        <p>味道不错，下次还去</p>
+                        <em>鼎极轩海鲜烤肉自助（小营店）</em>
+                    </div>
+                </div>
+                <div class="detail-box9">
+                    <div class="detail-box9-left">
+                        <img src="images/detail-box9.png" alt="">
+                        <span>kacakucu</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box9-right">
+                        <span class="star-out9">
+                            <span class="star-in9"></span>
+                        </span>
+                        <i>2017-01-15</i>
+                        <p>老顾客了，非常推荐本店，这次组织员工年底聚餐来着，特地提前来省的排队。菜品还是一如既往的好，种类感觉比小营店稍少一点，毕竟地方比那小，但是味道和食材还是很好的。强烈推荐黑森林蛋糕、草莓罐头、蜜汁糯米藕（个人口味，南方人好吃甜食）～</p>
+                        <div class="detail-box9-img">
+                            <ul>
+                                <li><a href=""><img src="images/detail-box9-img1.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box9-img2.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box9-img3.png" alt=""></a></li>
+                                <li><a href=""><img src="images/detail-box9-img4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <em>鼎极轩海鲜烤肉自助（四道口店）</em>
+                    </div>
+                </div>
+                <div class="detail-box10">
+                    <div class="detail-box10-left">
+                        <img src="images/detail-box10.png" alt="">
+                        <span>nQS622269212</span>
+                        <i></i>
+                    </div>
+                    <div class="detail-box10-right">
+                        <span class="star-out10">
+                            <span class="star-in10"></span>
+                        </span>
+                        <i>2017-04-01</i>
+                        <p>非常好，以后还会来</p>
+                        <em>鼎极轩海鲜烤肉自助（四道口店）</em>
+                    </div>
+                </div>
+                <div class="detail-options">
+                    <ul>
+                        <li class="cur">首页</li>
+                        <li class="cur"><em></em>上一页</li>
+                        <li class="cur bac">1</li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">下一页<i></i></a></li>
+                        <li><a href="">尾页</a></li>
+                    </ul>
+                </div>
+                <div class="detail-snap">
+                    <div class="detail-snap-left">
+                        <span>¥<i class="fs-32 "> 69.6</i></span>
+                        <div class="detail-snap-price">
+                            <em>门店价</em>
+                            <s>¥89</s>
+                        </div>
+                        <div class="detail-snap-sale">
+                            <em>已售</em>
+                            <h4>2788</h4>
+                        </div>
+                    </div>
+                    <div class="detail-snap-button">
+                        <a href="http://bj.meituan.com/deal/buy/33558643?mtt=1.deal%2Fdefault.0.0.j202h9ly">抢购</a>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <a href="http://i.meituan.com/mobile/down/dealbottom?mtt=1.deal%2Fdefault.0.0.j202h9ly" title="下载美团app"><img src="images/phone-img.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="itembar">
+            <div class="itembar-extension">
+                <a class="itembar-extension-phone" href="http://i.meituan.com/mobile/down/meituan?mtt=1.index%2Fdefault%2Fpoi.rm.1.j14phem8">
+                </a>
+                <a class="itembar-extension-movie" href="http://maoyan.com/">
+                </a>
+                <a class="itembar-extension-agency" href="http://daili.meituan.com/?comeFrom=mtwebRBT&mtt=1.index%2Fdefault%2Fpoi.0.0.j14phem8">
+                </a>
+            </div>
+            <div class="itembar-guess">
+                <h3>猜你喜欢</h3>
+                <div class="itembar-guessbox">
+                    <a href="">
+                        <img src="images/food3.png" alt="">
+                        <i>1</i>
+                    </a>
+                    <a href="">
+                        <p>【152店通用】吉野家卤肉饭+乌龙茶（小）</p>
+                    </a>
+                    <div class="itembar-info">
+                        <span class="c-orange">¥<em class="c-orange fs-28">10</em></span>
+                        <span class="c-lgray fs14"> 已售<b class="c-orange fs14"> 106594</b></span>
+                    </div>
+                </div>
+                <div class="itembar-guessbox">
+                    <a href="">
+                        <img src="images/amusement1.png" alt="">
+                        <i>2</i>
+                    </a>
+                    <a href="">
+                        <p>【25店通用】唱吧麦颂量版式KTV-周一至周五全时段欢唱套餐</p>
+                    </a>
+                    <div class="itembar-info">
+                        <span class="c-orange">¥<em class="c-orange fs-28">10</em></span>
+                        <span class="c-lgray fs14"> 已售<b class="c-orange fs14"> 106594</b></span>
+                    </div>
+                </div>
+                <div class="itembar-guessbox">
+                    <a href="">
+                        <img src="images/food8.png" alt="">
+                        <i>3</i>
+                    </a>
+                    <a href="">
+                        <p>【19店通用】周一至周五自助餐</p>
+                    </a>
+                    <div class="itembar-info">
+                        <span class="c-orange">¥<em class="c-orange fs-28">63</em></span>
+                        <span class="c-lgray fs14"> 已售<b class="c-orange fs14"> 108003</b></span>
+                    </div>
+                </div>
+                <div class="itembar-guessbox">
+                    <a href="">
+                        <img src="images/food13.png" alt="">
+                        <i>4</i>
+                    </a>
+                    <a href="">
+                        <p>【29店通用】金百万烤鸭店烤鸭</p>
+                    </a>
+                    <div class="itembar-info">
+                        <span class="c-orange">¥<em class="c-orange fs-28">88</em></span>
+                        <span class="c-lgray fs14"> 已售<b class="c-orange fs14"> 8046</b></span>
+                    </div>
+                </div>
+                <div class="itembar-guessbox">
+                    <a href="">
+                        <img src="images/item-box29.png" alt="">
+                        <i>5</i>
+                    </a>
+                    <a href="">
+                        <p>【6店通用】单人自助餐</p>
+                    </a>
+                    <div class="itembar-info">
+                        <span class="c-orange">¥<em class="c-orange fs-28">56</em></span>
+                        <span class="c-lgray fs14"> 已售<b class="c-orange fs14"> 433991</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="itembar-prize">
+                <a href="http://www.meituan.com/lottery/past?mtt=1.index%2Fdefault%2Fpoi.rd.1.j162fbxr"></a>
+                <span>
+                    <i></i>
+                    <p>
+                      <em>薇拉宫邸私人婚礼会所，免..</em> 
+                      <em>浙江康恩贝健康科技有限公..</em>
+                      <em>福建省安溪闽绿茶业有限公..</em> 
+                    </p>
+                </span>
+            </div>
+            <div class="itembar-recruitment">
+                <a href="http://campus.meituan.com/?mtt=1.index%2Fdefault%2Fpoi.0.0.j162fbxr#/"><em></em></a>
+                <div class="itembar-recruitment-opinion">
+                    <span class="span1">
+                        <a href="http://www.meituan.com/feedback/default/?mtt=1.index%2Fdefault%2Fpoi.0.0.j167qhxo">
+                            <i></i>
+                            <p>有您的建议，美团才能更好>></p>
+                        </a>
+                    </span>
+                    <span class="span2">
+                        <a href="http://emis.meishi.meituan.com/merchantsSettled?mtt=1.index%2Fdefault%2Fpoi.0.0.j167qhxo">
+                            <b></b>
+                            <span>希望在美团网组织团购吗</span>
+                            <p>请提交团购信息>></p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---详情页展开部分结束-->
+
+
+
+<!--底部footer1开始-->
+    <div class="footer1 sec980 mt20"> 
+        <dl>
+        	<dt>获取更新</dt>
+            <dd><a href="https://passport.meituan.com/account/unitivelogin?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fwww.meituan.com%252Fmaillist%252Fsubscribe%253Fmtt%253D1.index%25252Ffloornew.0.0.ix78tnfd&mtt=1.index%2Ffloornew.0.0.ix78tnfd" ">邮件订阅</a></dd>
+            <dd><a href="http://i.meituan.com/mobile/down/meituan?mtt=1.index%2Ffloornew.0.0.ix78u8ik" ">iphone/Android</a></dd>
+            <dd><a href="http://user.qzone.qq.com/97231705" ">美团QQ空间</a></dd>
+            <dd><a href="http://weibo.com/meituanbj" ">美团新浪微博</a></dd>
+            <dd><a href="http://www.meituan.com/sitemap/citysitemap.php?mtt=1.index%2Ffloornew.0.0.ix78ul4f" ">sitemap</a></dd>
+            <dd><a href="http://bj.meituan.com/feed/beijing?mtt=1.index%2Ffloornew.0.0.ix78ul4f" ">RSS订阅</a></dd>
+        </dl>
+        <dl>
+        	<dt>商务合作</dt>
+            <dd><a href="http://emis.meishi.meituan.com/merchantsSettled?mtt=1.index%2Ffloornew.0.0.ix78ul4f" ">商家合作</a></dd>
+            <dd><a href="http://zhaoshang.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix78wz48" ">美团商家营销平台</a></dd>
+            <dd><a href="http://daili.meituan.com/?comeFrom=mtwebBusinesscoopd&mtt=1.index%2Ffloornew.0.0.ix78y9cc" ">到店餐饮代理商招募</a></dd>
+            <dd><a href="http://www.meituan.com/about/?mtt=1.index%2Ffloornew.0.0.ix78y9cc#contact" ">市场合作</a></dd>
+            <dd><a href="http://union.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix78yy0j" ">美团联盟</a></dd>
+            <dd><a href="https://mos.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix78yy0j?mtt=1.index%2Ffloornew.0.0.ix78yy0j" ">美团云</a></dd>
+            <dd><a href="mailto:lianzheng@meituan.com" ">廉正邮箱</a></dd>
+            <dd><a href="http://developer.meituan.com/home?applyFrom=meituan_c_pc_home&mtt=1.index%2Ffloornew.0.0.ix78yy0j" ">聚宝盆餐饮开放平台</a></dd>
+        </dl>
+        <dl>
+        	<dt>公司信息</dt>
+            <dd><a href="http://www.meituan.com/about/?mtt=1.index%2Ffloornew.0.0.ix78yy0j" ">关于美团</a></dd>
+            <dd><a href="http://www.meituan.com/commitment/" ">美团承诺</a></dd>
+            <dd><a href="http://www.meituan.com/about/press" ">美体报道</a></dd>
+            <dd><a href="http://zhaopin.meituan.com/?mtt=1.index%2Ffloornew.0.0.ix791q42" ">加入我们</a></dd>
+            <dd><a href="http://www.meituan.com/about/law?mtt=1.index%2Ffloornew.0.0.ix7920hc" ">法律声明</a></dd>
+            <dd><a href="http://www.meituan.com/about/terms?mtt=1.index%2Ffloornew.0.0.ix7929ti" ">用户协议</a></dd>
+            <dd><a href="http://www.meituan.com/about/saferule?mtt=1.index%2Ffloornew.0.0.ix792j8u" ">美团点评餐饮安全管理办法</a></dd>
+        </dl>
+        <dl>
+        	<dt>用户帮助</dt>
+            <dd><a href="http://www.meituan.com/help/selfservice?mtt=1.index%2Ffloornew.0.0.ix792s6j" ">申请退款</a></dd>
+            <dd><a href="http://www.meituan.com/help/selfservice?tab=2&mtt=1.index%2Ffloornew.0.0.ix79339p" ">查看美团券密码</a></dd>
+            <dd><a href="http://www.meituan.com/help/faq?mtt=1.index%2Ffloornew.0.0.ix793d0m" ">常见问题</a></dd>
+            <dd><a href="http://www.meituan.com/help/api?mtt=1.index%2Ffloornew.0.0.ix793lzr" ">开放API</a></dd>
+            <dd><a href="http://www.meituan.com/about/anticheat?mtt=1.index%2Ffloornew.0.0.ix793v8h" ">反诈骗广告</a></dd>
+        </dl>
+ 		<div>
+        	<i class="icon-server ml30">
+            	客服电话
+            </i>
+            <p class="mb25 ml30">
+            	<span class="fs-20 c-gray">10107888</span> <span class="c-lgray fs12">(9:00-23:00)</span>
+            </p>
+			 
+
+			<p class="mb10 c-dgray ml30 fs12">退款、退换货、查看美团券</p>
+			<p><a href="http://www.meituan.com/help/selfservice?mtt=1.index%2Ffloornew.0.0.ix79473h" class="c-blue ml30 fs12" ">参考教程，轻松搞定!</a></p>
+        </div>
+    </div>
+<!--底部footer1结束-->
+
+
+
+<!--底部footer2开始-->
+    <div class="footer2">
+    	<ul class="footer2-ul"> 
+            <li>©2017 </li>
+            <li><a href="http://bj.meituan.com/?mtt=1.index%2Ffloornew.0.0.j0yxftir"> 美团网团购</a></li>
+            <li> meituan.com</li>
+            <li><a href="http://www.beianbeian.com/beianxinxi/283f39a9-4c00-427a-97ef-3c7a9e1e0af1.html"> 京ICP证070791号</a></li>
+            <li> | </span>
+            <li><a href="http://www.miitbeian.gov.cn/"> 京ICP备10211739号</a></li>
+            <li> | </li>
+            <li><a href="http://www.meituan.com/about/rules?mtt=1.index%2Ffloornew.0.0.j0yyfeem"> 电子公告服务规则</a></li>
+        </ul>
+        <p>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502025545">广播电视节目制作经营许可证 （京）字第03889号</a>
+        </p>
+        <div class="footer2-police">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502025545"><img src="images/footer2-police-img.png" alt=""></a>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502025545">京公安网备11010502025545</a>
+        </div>
+        <div class="footer2-img">
+            <a href="http://www.meituan.com/about/openinfo?mtt=1.index%2Ffloornew.0.0.j0yyfeem" class="footer2-img1"></a>
+            <a href="http://t.knet.cn/index_new.jsp" class="footer2-img2"></a>
+            <a href="http://www.bj315.org/xfwq/lstd/201209/t20120910_3344.shtml?dnrpluojqxbceiqq" class="footer2-img3"></a>
+        </div>
+    </div>
+<!--底部footer2结束-->
+
+
+
+    <script src="js/list.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

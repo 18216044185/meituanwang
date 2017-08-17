@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* common.css */
+.topbox{		/*导航栏大的区块样式*/
+	width: 100%;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+	height: 30px;
+	margin-bottom:17px;
+}
+.sec1170{		/*给所有的大的区块一个统一的样式*/
+	width:1170px;
+	margin:0 auto;
+}
+.sec980{		/*列表页，详细页 给所有的大的区块一个统一的样式*/
+	width:980px;
+	margin:0 auto;
+}
+.fl{	/*导航栏左边左浮动*/
+	float:left;
+}
+.fr{	/*导航栏右边右浮动*/
+	float:right;
+}
+/* 项目中要用到的颜色*/
+.c-orange{
+	color:#f76120;/*橘黄色*/
+}
+.c-blue{
+	color:#2bb8aa;/*蓝色*/
+}
+.c-gray{
+	color:#666;/*灰色*/
+}
+.c-dgray{
+	color:#333;/*深灰色*/
+}
+.c-lgray{
+	color:#999;/*浅灰色*/
+}
+
+
+/*----------项目中要用到的边距----------------------*/
+.mt7{
+	margin-top:7px;	/*距离顶部7像素*/
+}
+.mt10{
+	margin-top:10px;	/*距离顶部10像素*/
+}
+.mt15{
+	margin-top:15px;	/*距离顶部15像素*/
+}
+.mt18{
+	margin-top:18px;	/*距离顶部18像素*/
+}
+.mt20{
+	margin-top:20px;	/*距离顶部20像素*/
+}
+.mb10{
+	margin-bottom:10px;	/*距离底部10像素*/
+}
+.mb25{
+	margin-bottom:25px;	/*距离底部25像素*/
+}
+.mr4{
+	margin-right:4px;	/*距离右4像素*/
+}
+.mr10{
+	margin-right:10px;	/*距离右边10像素*/
+}
+.mr16{
+	margin-right:16px;	/*距离右边16像素*/
+}
+.ml5{
+	margin-left:5px;	/*距离左边5像素*/
+}
+.ml10{
+	margin-left:10px;	/*距离左边10像素*/
+}
+.ml12{
+	margin-left:12px;	/*距离左边12像素*/
+}
+.ml14{
+	margin-left:14px;	/*距离左边14像素*/
+}
+.ml16{
+	margin-left:16px;	/*距离左边16像素*/
+}
+.ml18{
+	margin-left:18px;	/*距离左边18像素*/
+}
+.ml30{
+	margin-left:30px;	/*距离左边30像素*/
+}
+
+
+
+.fs-9{
+	font-size:9px;		/*字体为9号字体，并且加粗*/
+	font-weight:bolder;
+}
+.fs-12{
+	font-size:12px;		/*字体为12号字体，并且加粗*/
+	font-weight:bolder;
+}
+.fs-14{					/*字体为14号字体，并且加粗*/
+	font-size:14px;
+	font-weight:bolder;
+}
+.fs-16{					/*字体为16号字体，并且加粗*/
+	font-size:16px;
+	font-weight:bolder;
+}
+.fs-18{					/*字体为18号字体，并且加粗*/
+	font-size:18px;
+	font-weight:bolder;
+}
+.fs-20{					/*字体为20号字体，并且加粗*/
+	font-size:20px;
+	font-weight:bolder;
+}
+.fs-24{					/*字体为24号字体，并且加粗*/
+	font-size:24px;
+	font-weight:bolder;
+}
+.fs-28{					/*字体为28号字体，并且加粗*/
+	font-size:28px;
+	font-weight:bolder;
+}
+.fs-32{					/*字体为32号字体，并且加粗*/
+	font-size:32px;
+	font-weight:bolder;
+}
+.fs10{					/*字体为10号字体*/
+	font-size:10px;
+}
+.fs12{					/*字体为12号字体*/
+	font-size:12px;
+}
+.fs13{					/*字体为13号字体*/
+	font-size:13px;
+}
+.fs14{					/*字体为14号字体*/
+	font-size:14px;
+}
+.fs16{					/*字体为16号字体*/
+	font-size:16px;
+}						/*字体为20号字体*/
+.fs20{
+	font-size:20px;
+}						/*字体为23号字体*/
+.fs23{
+	font-size:23px;
+}
+
+a{
+	color:#666;
+}
+a:hover{
+	color:#2bb8aa;
+}
+.none a{
+	text-decoration: none;
+}
+.li-th{
+	text-decoration:line-through;
+}
+
+.inline{ 
+	display:inline-block;
+}
+.clearfix{   /*用于清除父级元素因子元素浮动而产生的高度为0的情况 */
+	overflow: hidden;
+}
